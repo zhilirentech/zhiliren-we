@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite  name="Suite" parallel="none">
+  <test name="Test">
+    <classes>
+      <class name="com.uxuexi.common.util.TestArrayUtil"/>
+      <class name="com.uxuexi.common.util.TestBeanUtil"/>
+      <class name="com.uxuexi.common.util.TestCollectionUtil"/>
+      <class name="com.uxuexi.common.util.TestConvertUtil"/>
+      <class name="com.uxuexi.common.util.TestDateTimeUtil"/>
+      <class name="com.uxuexi.common.util.TestEncodeUtil"/>
+      <class name="com.uxuexi.common.util.TestEncryptUtil"/>
+      <class name="com.uxuexi.common.util.TestEnumUtil"/>
+      <class name="com.uxuexi.common.util.TestExceptionUtil"/>
+      <class name="com.uxuexi.common.util.TestHtmlUtil"/>
+      <class name="com.uxuexi.common.util.TestImageUtil"/>
+      <class name="com.uxuexi.common.util.TestIocUtil"/>
+      <class name="com.uxuexi.common.util.TestIpUtil"/>
+      <class name="com.uxuexi.common.util.TestJsonUtil"/>
+      <class name="com.uxuexi.common.util.TestMapUtil"/>
+      <class name="com.uxuexi.common.util.TestPinYinUtil"/>
+      <class name="com.uxuexi.common.util.TestRandomUtil"/>
+      <class name="com.uxuexi.common.util.TestRecordUtil"/>
+      <class name="com.uxuexi.common.util.TestReflectionUtil"/>
+      <class name="com.uxuexi.common.util.TestStringUtil"/>
+      <class name="com.uxuexi.common.util.TestUnitTestUtil"/>
+      <class name="com.uxuexi.common.util.TestUtil"/>
+    </classes>
+  </test>
+</suite>

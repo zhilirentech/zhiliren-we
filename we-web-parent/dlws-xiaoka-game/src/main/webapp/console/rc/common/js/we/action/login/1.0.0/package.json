@@ -1,0 +1,13 @@
+{
+	"family": "vko/action",
+	"name": "login",
+	"version": "1.0.0",
+	"description": "提供登录方法。",
+	"spm": {
+		"alias": {
+			"jquery": "jquery",
+			"md5": "md5"
+		},
+		"output": ["login.js","images/*"]
+	}
+}

@@ -1,0 +1,293 @@
+html {
+	font-size: 100px;
+	/*overflow: hidden;*/
+	/*overflow-x:hidden;*/
+}
+
+body {
+	/*overflow-x:hidden;
+overflow-y:hidden;*/
+}
+
+.header {
+	width: 100%;
+	height: 44px;
+	line-height: 44px;
+	text-align: center;
+	font-size: 18px;
+	color: white;
+	background: #d94336;
+}
+
+.footer {
+	position: fixed;
+	width: 100%;
+	bottom: 0px;
+	right: 0px;
+	height: 44px;
+	line-height: 44px;
+	background: linear-gradient(to right, black, #2f2e2e, black);
+	z-index: 1000;
+}
+
+.footer p {
+	width: 25%;
+	/*background: pink;*/
+	float: left;
+	height: 44px;
+	line-height: 69px;
+}
+
+.footer p.first {
+	background: url(../img/bottom-homepage.png) no-repeat center 5px;
+	background-size: 18px 18px;
+	text-align: center;
+}
+
+.footer p.two {
+	background: url(../img/bottom-ranking.png) no-repeat center 5px;
+	background-size: 18px 18px;
+	text-align: center;
+}
+
+.footer p.three {
+	background: url(../img/bottom-my.png) no-repeat center 5px;
+	background-size: 18px 18px;
+	text-align: center;
+}
+.footer p.four {
+	background: url(../img/bottom-find.png) no-repeat center 5px;
+	background-size: 18px 18px;
+	text-align: center;
+}
+.clearfix:after {
+	display: block;
+	height: 0px;
+	clear: both;
+	content: ".";
+	visibility: hidden;
+	zoom: 1;
+}
+.asss{
+	
+}
+.main_time {
+	
+	height: 27px;
+	line-height: 27px;
+	background: #f18e00;
+	/*background:linear-gradient(left, #f7af07,#f18e00,#ed7200);*/
+	color: white;
+	font-size: 14px;
+	width: 237px;
+	border-radius: 23px;
+	float: right;
+	margin-top: 30px;
+	margin-right: 10px;
+}
+
+.main_time span:first-child {
+	padding-left: 24px;
+	background: url("../img/signin.png") no-repeat 10px center;
+	background-size: 14px 14px;
+}
+
+.main_con {
+	border: 2px solid #d94336;
+	width: 80%;
+	/*height: 300px;*/
+	margin: 0px auto 0px;
+	border-radius: 10px;
+	padding-bottom: 40px;
+	position: relative;
+}
+
+.main_img {
+	width: 25%;
+}
+
+.main_img img {
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 10px;
+}
+
+.main_img p {
+	font-size: 12px;
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+.fl {
+	float: left;
+}
+.add_img{
+	/*float: right;*/
+	position: absolute;
+	right: 20px;
+	bottom: 10px;
+	padding-right: 18px;
+	background: url("../img/titleUp.png") no-repeat right center;
+	background-size: 15px 15px;
+	/*margin-right: 20px;
+	margin-top: 10px;*/
+}
+.PK_signIn{
+	font-size:23px ;
+	text-align: center;
+	color: white;
+	background: #d94336;
+	width: 90px;
+	height: 90px;
+	border-radius:50% ;
+	margin: 40px auto 0;
+}
+
+.PK_signIn p{
+	font-size:23px ;
+	text-align: center;
+	color: white;
+	margin-bottom: 0px;
+	width: 50px;
+	font-weight: 600;
+	height: 30px;
+	line-height: 30px;
+	margin: 0 auto;
+	padding-top: 12px;
+}
+
+
+
+/*弹窗*/
+.rulePopup {
+			display: none;
+			width: 70%;
+			/*height: 300px;*/
+			background: white;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-left: -35%;
+			/*margin-top: -150px;*/
+			border-radius: 10px;
+			z-index: 1000;
+			border: 2px solid #d94336;
+		}
+		
+		.rulePopup .one {
+			color: black;
+			background: url("img/rule.png")no-repeat left center;
+			background-size: 14px 14px;
+			font-size: 25px;
+			margin: 20px auto 0px;
+			text-align: center;
+		}
+		
+		.rulePopup .two {
+			color: white;
+			font-size: 18px;
+			text-align: center;
+			background: #d94336;
+			width: 1.3rem;
+			margin: 30px auto 0px;
+			height: 36px;
+			line-height: 36px;
+			border-radius: 7px;
+			margin-bottom: 20px;
+		}
+
+
+/*本校*/
+/*本校*/
+	.SchoollList{
+			display: block;
+		margin-top: 10px;
+		margin-left: 10px;
+		margin-right: 10px;
+		
+	}
+	.SchoollList .one {
+		margin-top: 10px;
+		height: 50px;
+		line-height: 40px;
+		border-bottom: 1px solid gainsboro;
+	}
+	.SchoollList .one img{
+		float: left;
+		width: 40px;
+		height: 40px;
+		vertical-align:middle;
+	}
+	.SchoollList .one img.medalnumberone{
+		width: 30px;
+		height: 35px;
+	}
+	.SchoollList .one img.medalnumbertwo{
+		margin-left: 10px;
+	}
+	.SchoollList .one .nameThree{
+		float: left;
+		margin-left: 10px;
+		margin-right: 10px;
+		font-size: 10px;
+	}
+	.SchoollList .one .nameThree p{
+		/*width: 100px;*/
+		margin-bottom: 0px;
+		line-height: 26px;
+		height: 12px;
+		
+	}
+	.dayFour{
+		float: right;
+	}
+	.dayFourtips{
+		float: left;
+		margin-right: 10px;
+		color: #d94336;
+		font-size:10px;
+	}
+	.dayFourtips span{
+		color: black;
+	}
+	.nameThree p{
+		font-size: 10px;
+		color: black;
+	}
+.SchoollList .one .medalnumberone{
+		width: 30px;
+		height: 35px;
+		float: left;
+		text-align: center;
+		font-size: 25px;
+		font-weight: 600;
+	}
+	.rankingbottom{
+		width: 100%;
+		height: 50px;
+		margin-bottom: 70px;
+		background: url("../img/titleUp.png") no-repeat center 8px;
+		background-size: 25px 20px;	
+	}
+	.medalnumberone{
+		color: black;
+	}
+	
+	.SchoollList_finish{
+		text-align: center;
+		padding-top: 5px;
+	}
+	.pb5{
+		padding-bottom: 5px;
+	}
+	.mt20{
+		margin-top:20px ;
+	}
+
+.mb100{
+	margin-bottom: 100px;
+}
+.main {
+	padding-top:70px;
+}
+

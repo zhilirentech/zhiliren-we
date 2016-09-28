@@ -1,0 +1,13 @@
+{
+	"name": "ajax",
+	"family": "vko/plugins",
+	"version": "1.0.0",
+	"description": "提供 vkoAjax，vkoAjaxP，vkoSubmit，vkoSubmitP，处理返回的 json",
+	"spm": {
+		"alias": {
+			"jquery": "jquery",
+			"parsejson": "parsejson"
+		},
+		"output": ["ajax.js"]
+	}
+}

@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+
+/* Tree */
+.tree{ min-height:200px;}
+.tree div div { background:url(images/tree.png) no-repeat;}
+.tree .folder_collapsable, .tree .folder_expandable, .tree .file { background:url(images/folder.png) no-repeat;}
+.tree .checked, .tree .unchecked, .tree .indeterminate, .tree .disabled { background:url(images/check.png) no-repeat;}
+.tree ul{ margin:0; padding:0 0 0 18px;}
+.tree ul.line{  background:url(images/tree_line.png) repeat-y;}
+.tree li a{ padding:0 5px 0 0; color:#183152;}
+.tree li span { color:#183152; float:left;}
+.tree div.hover{ background:#f0f0f0; cursor:pointer;}
+.tree div.selected { background-color:#e8edf3;}
+.tree .ncont .drag,.tree .ncont .add,.tree .ncont .edit,.tree .ncont .del{ background:url(images/tool.png) no-repeat;}
+.tree .ncont .drag{ background-position: center -75px;}
+.tree .ncont .add{ background-position: center 3px;}
+.tree .ncont .edit{ background-position: center -22px;}
+.tree .ncont .del{ background-position: center -47px;}
+
+
+
+/* Tree */
+.tree li { clear:both; line-height:22px; white-space: nowrap; text-align: left;}
+.tree a, .tree span { display:inline-block; *display:inline; *zoom:1; height:22px; line-height:22px;}
+.tree div { display:block; height:22px; overflow:hidden;}
+.tree div div { float:left; display:inline-block; overflow:hidden; width:22px; border:none; background-position:0 -100px; *display:inline; *zoom:1;}
+.tree .ncont{ width:auto; background:none; float:none;}
+.tree .ncont span{ overflow:hidden; width:22px;}
+.tree a, .tree a:hover { text-decoration:none;}
+
+.tree .collapsable { background-position:0 -300px;}
+.tree .first_collapsable { background-position:0 -250px;}
+.tree .last_collapsable { background-position:0 -350px;}
+
+.tree .expandable { background-position:0 -100px;}
+
+.tree .first_expandable { background-position:0 -50px;}
+.tree .last_expandable { background-position:0 -150px;}
+.tree .end_expandable { background-position:0 0;}
+.tree .end_collapsable { background-position:0 -200px;}
+
+.tree .indent { background:none;}
+.tree .line { background-position:0 -400px;}
+.tree .node { background-position:0 -450px;}
+.tree .last .node { background-position:0 -500px;}
+
+.tree .folder_expandable { background-position:0 0;}
+.tree .folder_collapsable { background-position:0 -50px;}
+.tree .file { background-position:0 -100px;}
+
+.tree .unchecked { background-position:0 0;}
+.tree .hover .unchecked { background-position:0 -50px;}
+.tree .checked { background-position:0 -100px;}
+.tree .hover .checked { background-position:0 -150px;}
+.tree .indeterminate { background-position:0 -200px;}
+.tree .hover .indeterminate { background-position:0 -250px;}
+.tree .disabled { background-position:0 -293px;}
+.tree .checked.disabled{ background-position:0 -343px;}
+
+/* treeMenu */
+#treemenu{display:none; position:absolute; z-index:500; left:0; top:0;}
+#treemenu ul{list-style:none; padding:1px; margin:0; background-color:#fff; border:1px solid #999; width:150px;}
+#treemenu li{display:block; color:#000; padding:3px; margin:0; border:1px solid #fff; background-color:transparent; text-align:left; cursor:default;}
+#treemenu li.hover{border:1px solid #0a246a; background-color:#b6bdd2}
+#treemenu li.disabled{color:#666;}
+#treemenu li a{ width:100%; color:#000; display:inline-block; text-decoration:none; *display:inline; *zoom:1;}
+#treemenuShadow{display:none; position:absolute; opacity:0.2; filter:alpha(opacity=20); background-color:#000; z-index:499; }

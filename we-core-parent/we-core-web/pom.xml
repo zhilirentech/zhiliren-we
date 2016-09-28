@@ -1,0 +1,63 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.we</groupId>
+		<artifactId>we-core-parent</artifactId>
+		<version>1.0.0</version>
+	</parent>
+	<artifactId>we-core-web</artifactId>
+
+	<name>we-core-web</name>
+	<description>web项目相关的包</description>
+	<dependencies>
+		<!-- 验证框架   -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>4.3.1.Final</version>
+		</dependency>
+		<!-- freemarker 模板引擎 -->
+		<dependency>
+			<groupId>org.freemarker</groupId>
+			<artifactId>freemarker</artifactId>
+			<version>2.3.18</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jsp-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+		</dependency>
+		<!-- 数据库持久包 -->
+		<dependency>
+			<groupId>com.we</groupId>
+			<artifactId>we-core-db</artifactId>
+		</dependency>
+		<!-- 缓存包 -->
+		<dependency>
+			<groupId>com.we</groupId>
+			<artifactId>we-core-redis</artifactId>
+		</dependency>
+		<!-- doc转成pdf所需的jar包 -->
+		<dependency>
+		    <groupId>com.artofsolving</groupId>
+		    <artifactId>jodconverter</artifactId>
+		    <version>2.2.1</version>
+		</dependency>
+		<!-- 定时任务begin -->
+		<dependency>
+			<groupId>org.quartz-scheduler</groupId>
+			<artifactId>quartz</artifactId>
+			<version>2.1.5</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.transaction</groupId>
+			<artifactId>jta</artifactId>
+			<version>1.1</version>
+		</dependency>
+		<!-- 定时任务end -->
+	</dependencies>
+</project>

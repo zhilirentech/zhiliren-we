@@ -1,0 +1,10 @@
+{
+	"family": "gallery",
+	"name": "swfobject",
+	"version": "2.3.0",
+	"description": "SWFObject是一个用于在HTML中方便插入Adobe Flash媒体资源（*.swf文件）的独立、敏捷的JavaScript模块。",
+	"homepage": "https://github.com/swfobject/swfobject",
+	"spm": {
+		"output": ["swfobject.js", "expressInstall.swf"]
+	}
+}

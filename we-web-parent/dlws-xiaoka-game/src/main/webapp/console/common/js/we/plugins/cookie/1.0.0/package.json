@@ -1,0 +1,9 @@
+{
+	"name": "cookie",
+	"family": "vko/plugins",
+	"version": "1.0.0",
+	"description": "提供 Cookie 操作方法，支持读取、设置、删除",
+	"spm": {
+		"output": ["cookie.js"]
+	}
+}

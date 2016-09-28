@@ -1,0 +1,12 @@
+{
+	"name": "dialog",
+	"family": "vko/plugins",
+	"version": "1.0.0",
+	"description": "提供 dialog 对话框组件",
+	"spm": {
+		"alias": {
+			"jquery": "jquery"
+		},
+		"output": ["dialog.js","images/**"]
+	}
+}

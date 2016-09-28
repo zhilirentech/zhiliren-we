@@ -1,0 +1,11 @@
+.bs-docs-example{padding-left:50px;}
+.thumbnails-wrap{padding-right:0;padding-left:14px;}
+.thumbnails li{line-height: 160px;}
+.myScroll{position: relative;}
+.nav-pills{position: fixed;top: 100px;left: 100px;}
+.badge-wrap li{line-height:34px;list-style:none;}
+.badge-wrap li code{margin-left:10px;}
+.btn-lst{margin-bottom:15px;}
+.container{height:auto;}
+.linenums li{list-style-type:decimal}
+menu, ol, ul{padding:0}

@@ -1,0 +1,143 @@
+/**
+ * Default DropKick theme
+ *
+ * Feel free to edit the default theme
+ * or even add your own.
+ *
+ * See the readme for themeing help
+ *
+ */
+.vkoslct_container {
+  background-color: #fff;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size: 12px;
+  /*margin-bottom: 18px;*/ }
+  .vkoslct_container:focus {
+    outline: 0; }
+  .vkoslct_container.disabled,.vkoslct_container.readonly{ background-color:#f3f3f3}
+  .vkoslct_container.disabled .vkoslct_toggle,
+  .vkoslct_container.disabled .vkoslct_toggle:hover,
+  .vkoslct_container.readonly .vkoslct_toggle,
+  .vkoslct_container.readonly .vkoslct_toggle:hover{ color:#aaa; cursor:not-allowed;}
+  .vkoslct_container a {
+    cursor: pointer;
+    text-decoration: none; }
+.vkoslct_container .vkoslct_label { line-height:28px;}
+.vkoslct_toggle {
+  border: 1px solid #ccc;
+  color: #333;
+  padding: 0 10px;
+  background:url(images/vkoselect-arrows.png) 95% 12px no-repeat;
+  position: relative; }
+  .vkoslct_toggle:hover{ color:#666;}
+  .vkoslct_toggle:after {
+    position: absolute;
+    top: 45%;
+    right: 10px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #4B4B4B; }
+
+/* Applied when the dropdown is focused */
+.vkoslct_focus .vkoslct_toggle {
+  border-color: #40b5e2;}
+
+/* Applied whenever the dropdown is open */
+.vkoslct_open {
+  /**
+   * Help: Dropdown menu is covered by something
+   * Try setting this value higher
+   */
+  z-index: 10; }
+  .vkoslct_open .vkoslct_toggle {
+    background-color: #fafafa;
+    background-position:95% -13px;
+    color: #999; }
+
+/* The outer container of the options */
+.vkoslct_options {
+  background: #fefefe; }
+  .vkoslct_options a {
+    background-color: #fff;
+    padding:0 5px; }
+  .vkoslct_options a:hover,
+  .vkoslct_options .vkoslct_option_current a {
+    background-color: #5475b5;
+    color: #fff;
+    text-decoration: none;}
+  .vkoslct_options li:last-child a {
+    border-bottom: none; }
+  .vkoslct_options .disabled {
+    cursor: default; }
+    .vkoslct_options .disabled a {
+      color: #aaa; }
+    .vkoslct_options .disabled:hover, .vkoslct_options .disabled:hover a {
+      cursor: default;
+      background-color: #fff;
+      border-bottom-color: #999;}
+
+/* Inner container for options, this is what makes the scrollbar possible. */
+.vkoslct_options_inner {
+  max-height: 250px;
+  border: 1px solid #8c8c8e;
+  border-bottom-width: 2px;
+  border-bottom-color: #999;
+  color: #333;}
+
+/******  End Theme ******/
+/***** Critical to the continued enjoyment of working dropdowns ******/
+.vkoslct_container {
+  display: none;
+  float: left; }
+  .vkoslct_container a {
+    outline: 0; }
+
+.vkoslct_toggle {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  position: relative;
+  zoom: 1; }
+
+.vkoslct_open {
+  position: relative; }
+  .vkoslct_open .vkoslct_options {
+    display: block; }
+  .vkoslct_open .vkoslct_label {
+    color: inherit; }
+
+.vkoslct_options {
+  display: none;
+  margin-top: -1px;
+  position: absolute;
+  z-index:10;
+  right: 0;
+  width: 100%; }
+  .vkoslct_options a, .vkoslct_options a:link, .vkoslct_options a:visited { color:#333;
+    display: block; }
+
+.vkoslct_options_inner {
+  overflow: auto;
+  position: relative;
+  -webkit-overflow-scrolling: touch; }
+
+/* Hides only dropkick <select> instances */
+.vkoslct_container select {
+  position: absolute;
+  top: -99999em;
+  visibility: hidden; }
+
+/*  nativeMobile override */ 
+.vkoslct_mobile {
+  position: relative; }
+  .vkoslct_mobile select {
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0; left: 0;
+    visibility: visible;
+    opacity: 0;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none; }
+/***** End Critical to the continued enjoyment of working dropdowns ******/

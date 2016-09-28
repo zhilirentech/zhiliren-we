@@ -1,0 +1,13 @@
+/* 选择学校 */
+.alt_width04{ width:636px; padding:1px; clear:both; z-index:70; background:#fff;}
+.alt_width04 .alt_tit{ width:96%;}
+.alt_width04 .con_bg{ clear:both; border:#eaeaea 1px solid; background:#f5f5f5; padding:6px; line-height:24px; margin:6px; overflow:auto; _padding:6px 6px 30px;}
+.alt_width04 .con_bg a{ display:block; line-height:20px; padding:0px 6px; color:#5192be; float:left; clear:none; margin:4px 0px; min-width:24px; *float:none; *display:inline; *zoom:1;}
+.alt_width04 .con_bg .on_bg{ background:#51b1e2; color:#fff;}
+.alt_width04 .con_bg a:hover{ background:#51b1e2; color:#fff; text-decoration:none;}
+.alt_width04 .but_r{ clear:both; text-align:right; margin:0 4px 0 0;}
+.alt_width04 .con_list{ height:120px; clear:both; border:#eaeaea 1px solid; overflow-y:scroll ;margin:6px; padding:6px;}
+.alt_width04 .con_list ul li{ width:33%; height:24px; overflow:hidden; float:left; clear:none; line-height:24px; color:#5192be; cursor:pointer; width:31%\9;}
+.alt_width04 .con_list ul li a{ height:24px; float:left; color:#5192be; padding:0 10px 0 15px;}
+.alt_width04 .con_list ul li a:hover{ text-decoration:none;}
+.alt_width04 .con_list .on_bg a,.alt_width04 .con_list a.on_bg{ background:#51b1e2; color:#fff;}

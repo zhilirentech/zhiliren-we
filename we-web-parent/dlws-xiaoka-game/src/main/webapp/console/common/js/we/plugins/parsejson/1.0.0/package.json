@@ -1,0 +1,9 @@
+{
+	"name": "parsejson",
+	"family": "vko/plugins",
+	"version": "1.0.0",
+	"description": "提供字符串转json方法。",
+	"spm": {
+		"output": ["parsejson.js"]
+	}
+}

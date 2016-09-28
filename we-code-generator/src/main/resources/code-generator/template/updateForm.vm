@@ -1,0 +1,41 @@
+package $packageName;
+
+import com.uxuexi.core.web.form.ModForm;
+#foreach ($import in $form.Imports)
+#if ($import)
+import $import;
+#else
+
+#end
+#end
+public class ${form.updateFormName} extends ModForm implements Serializable{
+	private static final long serialVersionUID = 1L;
+#foreach ($column in $form.EnumColumns)
+	public static enum $column.SimpleJavaTypeName {
+
+
+#foreach ($value in $column.EnumValues) 
+		$value#if( $foreach.hasNext ),#end
+
+#end
+	}
+
+#end
+#foreach ($column in $form.Columns)
+	#if(${column.FieldName}!="id")/**$column.comment*/
+	private $column.SimpleJavaTypeName ${column.FieldName}#if ($column.DefaultValue) = ${column.DefaultValueCode}#end;
+	#end
+	
+#end
+#foreach ($column in $form.columns)
+#if(${column.FieldName}!="id")
+	public void ${column.SetterMethodName}($column.SimpleJavaTypeName $column.FieldName) {
+		this.$column.FieldName = ${column.FieldName};
+	}
+	 
+	public $column.SimpleJavaTypeName ${column.GetterMethodName}() {
+		return this.${column.FieldName};
+	}
+#end
+#end
+}

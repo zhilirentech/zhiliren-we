@@ -1,0 +1,102 @@
+package ${module.packageName};
+
+import ${module.serviceFullClassName};
+import ${module.fullUpdateFormName};
+import ${module.fullAddFormName};
+import ${module.fullFormName};
+
+import org.nutz.ioc.loader.annotation.Inject;
+import org.nutz.ioc.loader.annotation.IocBean;
+import org.nutz.log.Log;
+import org.nutz.log.Logs;
+import org.nutz.dao.pager.Pager;
+import org.nutz.mvc.annotation.*;
+
+import com.uxuexi.core.web.base.page.Pagination;
+import com.uxuexi.core.web.chain.support.JsonResult;
+
+@IocBean
+@At("${module.atUrl}")
+@Filters({//@By(type = AuthFilter.class)
+	})
+public class ${module.moduleClassName} {
+
+	private static final Log log = Logs.get();
+	
+	@Inject
+	private ${module.serviceClassName} ${module.serviceInstanceName};
+	
+	/**
+	 * 分页查询
+	 */
+	@At
+	@Ok("jsp")
+	public Pagination list(@Param("..") final ${module.formName} sqlParamForm,@Param("..") final Pager pager) {
+    	return ${module.serviceInstanceName}.listPage(sqlParamForm,pager);
+    }
+    
+    /**
+	 * 跳转到'添加操作'的录入数据页面
+	 */
+	@At
+	@GET
+	@Ok("jsp")
+	public Object add() {
+		return null ;
+	}
+
+	/**
+	 * 添加
+	 */
+	@At
+	@POST
+	public Object add(@Param("..")${module.addFormName} addForm) {
+		return ${module.serviceInstanceName}.add(addForm);
+	}
+
+	/**
+	 * 跳转到'修改操作'的录入数据页面,实际就是[按照主键查询单个实体]
+	 */
+	@At
+	@GET
+	@Ok("jsp")
+	public Object update(@Param("id") final long id) {
+		return ${module.serviceInstanceName}.fetch(id);
+	}
+
+	/**
+	 * 执行'修改操作'
+	 */
+	@At
+	@POST
+	public Object update(@Param("..")${module.updateFormName} updateForm) {
+		return ${module.serviceInstanceName}.update(updateForm);
+	}
+
+	/**
+	 * 删除记录
+	 */
+	@At
+	public Object delete(@Param("id") final long id) {
+		${module.serviceInstanceName}.deleteById(id);
+		return JsonResult.success("删除成功");
+	}
+
+	/**
+	 * 批量删除记录
+	 */
+	@At
+	public Object batchDelete(@Param("ids") final Long[] ids) {
+		${module.serviceInstanceName}.batchDelete(ids);
+		return JsonResult.success("删除成功");
+	}
+	
+#foreach($action in $module.actionList)
+	@At
+	@Ok("${action.viewType}")
+	public Object ${action.actionName}() {
+		return null ;
+	}
+
+#end
+}

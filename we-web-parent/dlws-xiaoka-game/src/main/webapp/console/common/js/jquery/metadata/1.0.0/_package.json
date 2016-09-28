@@ -1,0 +1,10 @@
+{
+	"name": "metadata",
+	"family": "jquery",
+	"version": "1.0.0",
+	"description": "jQuery plugin for parsing metadata from elements",
+	"spm": {
+    	"alias": {"jquery": "jquery"},
+    	"output": ["metadata.js"]
+	}
+}

@@ -1,0 +1,16 @@
+/* .select-box{float: left;margin-right: 15px}
+.selectDiv {position: relative;width: 238px;height: 38px;line-height: 38px;border: 1px solid #c2c2c2;cursor:pointer;}
+.select-l{width: 150px;height: 38px;padding-left:11px;color:#525252;font-size:16px;overflow: hidden;}
+.select-r{width: 41px;height: 38px;background:#00bfff; border-left: 1px solid #cbcbcb;}
+.select-r i{display: inline-block;width: 16px;height: 14px;margin: 14px 0 0 13px;background:url(../images/sel_arrow.png) no-repeat -16px 0;}
+.select-r i.iconUp{background-position:-16px -15px;}
+.select-r-change{background-position: -55px 2px;}
+.sel-sub{position: absolute;top: 39px;left: -1px;padding:6px; text-align:center;z-index: 200;background: url(../images/selSub_bg.png) 0 0 #FFF;border: 5px solid #FFF;display: none;}
+.sel-sub li{float: left; width: 59px;height: 35px;padding: 0 13px 0 13px;line-height: 35px;overflow: hidden;font-size:16px;color:#808080;}
+.sel-sub li:hover{background: #00bfff;color: #FFF}
+.sel-sub li.crt{background: #00bfff;color: #FFF;}
+.sel-sub li.crt:hover{color: #FFF;}
+.phase{border:none} */
+/*用了这个插件一年多后发现上面的代码是没什么鸟用的，因为UI一直在变^_^*/
+.selectDiv {position: relative;height: 38px;line-height: 38px;border: 1px solid #c2c2c2;cursor:pointer;}
+.sel-sub{position: absolute;top: 39px;left: -1px;text-align:center;z-index: 200;display: none;}

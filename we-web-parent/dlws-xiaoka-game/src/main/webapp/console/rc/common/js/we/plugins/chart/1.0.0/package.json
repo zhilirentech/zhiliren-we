@@ -1,0 +1,9 @@
+{
+	"family": "vko/plugins",
+	"name": "chart",
+	"version": "1.0.0",
+	"description": "提供图表展示",
+	"spm": {
+		"output": ["chart.js"]
+	}
+}

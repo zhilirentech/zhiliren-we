@@ -1,0 +1,151 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.we</groupId>
+	<artifactId>we-code-generator</artifactId>
+	<version>1.0.0</version>
+	<packaging>jar</packaging>
+
+    <name>we-code-generator</name>
+    <url>http://maven.apache.org</url>
+
+    <properties>
+    	<!-- 代码编译环境 -->
+		<jdk.version>1.8</jdk.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<nutz-version>1.r.57</nutz-version>
+		<core.version>1.0.0</core.version>
+        <velocity-version>1.7</velocity-version>
+        
+        <evo-inflector-version>1.0.1</evo-inflector-version>
+        <commons-cli-version>1.2</commons-cli-version>
+    </properties>
+  	<dependencies>
+  		<!-- 英文单词单复数转换 -->
+  		<dependency>
+            <groupId>org.atteo</groupId>
+            <artifactId>evo-inflector</artifactId>
+            <version>${evo-inflector-version}</version>
+        </dependency>
+  		
+  		<!-- 模板引擎 -->
+        <dependency>
+            <groupId>org.apache.velocity</groupId>
+            <artifactId>velocity</artifactId>
+            <version>${velocity-version}</version>
+        </dependency>
+        
+        <!-- CORE -->
+        <dependency>
+            <groupId>com.we</groupId>
+            <artifactId>we-core-common</artifactId>
+            <version>${core.version}</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>com.we</groupId>
+            <artifactId>we-core-db</artifactId>
+            <version>${core.version}</version>
+        </dependency>
+        
+        <!-- 为了生成的代码在项目中不报错而引入 -->
+        <dependency>
+            <groupId>com.we</groupId>
+            <artifactId>we-core-web</artifactId>
+            <version>${core.version}</version>
+        </dependency>
+        
+        <!-- Guava -->
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>18.0</version>
+		</dependency>
+		
+		<dependency>
+	    	<groupId>mysql</groupId>
+		    <artifactId>mysql-connector-java</artifactId>
+		    <version>5.1.15</version>
+	    </dependency>
+	    
+	    <dependency>
+	    	<groupId>com.alibaba</groupId>
+			<artifactId>druid</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+        
+        <!-- apache-poi -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>3.8</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.apache.poi</groupId>
+		    <artifactId>poi-ooxml</artifactId>
+		    <version>3.8</version>
+		</dependency>
+        
+        <!-- https://mvnrepository.com/artifact/log4j/log4j -->
+		<dependency>
+		    <groupId>log4j</groupId>
+		    <artifactId>log4j</artifactId>
+		    <version>1.2.17</version>
+		</dependency>
+		
+		<dependency>
+	      <groupId>org.projectlombok</groupId>
+	      <artifactId>lombok</artifactId>
+	      <version>1.16.4</version>
+	      <scope>compile</scope>
+	    </dependency>
+		
+    </dependencies>
+    <build>
+        <sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
+        <resources>
+            <resource>
+                <directory>${project.basedir}/src/main/resources</directory>
+                <filtering>false</filtering>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.5</version>
+                <configuration>
+                    <source>${jdk.version}</source>
+                    <target>${jdk.version}</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>1.5</version>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
+                <configuration>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
+                    <preparationGoals>clean install</preparationGoals>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

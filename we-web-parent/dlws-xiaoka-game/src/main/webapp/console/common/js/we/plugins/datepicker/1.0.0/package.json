@@ -1,0 +1,9 @@
+{
+	"family": "vko/plugins",
+	"name": "datepicker",
+	"version": "1.0.0",
+	"description": "提供日期控件",
+	"spm": {
+		"output": ["datepicker.js"]
+	}
+}

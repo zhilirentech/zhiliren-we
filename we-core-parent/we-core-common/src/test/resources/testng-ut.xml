@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="10" name="Suite" parallel="methods">
+  <test name="Test">
+    <classes>
+    	<class name="com.uxuexi.core.common.util.TestArrayUtil"/>
+    	<class name="com.uxuexi.core.common.util.TestBeanUtil"/>
+    	<class name="com.uxuexi.core.common.util.TestCollectionUtil"/>
+    	<class name="com.uxuexi.core.common.util.TestConvertUtil"/>
+    	<class name="com.uxuexi.core.common.util.TestDateTimeUtil"/>
+    	<class name="com.uxuexi.core.common.util.TestEnumUtil"/>
+    	<class name="com.uxuexi.core.common.util.TestExceptionUtil"/>
+    	<class name="com.uxuexi.core.common.util.TestFileUtil"/>
+    	<class name="com.uxuexi.core.common.util.TestImageUtil"/>
+    	<class name="com.uxuexi.core.common.util.TestJsonUtil"/>
+    	<class name="com.uxuexi.core.common.util.TestMapUtil"/>
+    	<class name="com.uxuexi.core.common.util.TestJsonUtil"/>
+    	<class name="com.uxuexi.core.common.util.TestRandomUtil"/>
+    	<class name="com.uxuexi.core.common.util.TestStringUtil"/>
+    	<class name="com.uxuexi.core.common.util.TestUtil"/>
+ 	</classes>
+  </test>
+</suite>

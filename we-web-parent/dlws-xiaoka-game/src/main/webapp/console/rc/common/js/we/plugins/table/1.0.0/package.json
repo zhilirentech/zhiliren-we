@@ -1,0 +1,12 @@
+{
+	"family": "vko/plugins",
+	"name": "table",
+	"version": "1.0.0",
+	"description": "提表格格式化",
+	"spm": {
+		"alias": {
+			"jquery": "jquery"
+		},
+		"output": ["table.js"]
+	}
+}

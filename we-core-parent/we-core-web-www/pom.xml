@@ -1,0 +1,24 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.we</groupId>
+		<artifactId>we-core-parent</artifactId>
+		<version>1.0.0</version>
+	</parent>
+
+	<artifactId>we-core-web-www</artifactId>
+	<name>we-core-web-www</name>
+	<description>网站前端相关的web项目</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.we</groupId>
+			<artifactId>we-core-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jsp-api</artifactId>
+		</dependency>
+	</dependencies>
+</project>

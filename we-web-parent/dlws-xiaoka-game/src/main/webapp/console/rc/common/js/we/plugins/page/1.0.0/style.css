@@ -1,0 +1,8 @@
+@charset "utf-8";
+.vpage{ width:100%; text-align:right;}
+.vpage span,.vpage a{ height:18px; line-height:20px; padding: 3px 13px; margin:2px; border-radius:2px; display:inline-block; *display:inline; *zoom:1;}
+.vpage a{ background:#fff; cursor:pointer;}
+.vpage a:hover,.vpage .vp_current{ background:#66b0cc; color:#fff;}
+.vpage .vp_first,.vpage .vp_last{ background:#66b0cc!important; color:#fff!important; padding: 3px 13px;}
+.vpage .vp_first:hover,.vpage .vp_last:hover{ background:#4299ba!important;}
+.vpage .vp_disabled,.vpage .vp_disabled:hover{ color:#ccc; background:#f0f0f0; cursor:default}

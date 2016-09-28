@@ -1,0 +1,19 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.we</groupId>
+    <artifactId>we-business-template</artifactId>
+    <version>1.0.0</version>
+  </parent>
+  <artifactId>we-business-template-api</artifactId>
+  <name>we-business-template-api</name>
+  <description>we-business-template-api</description>
+  <dependencies>
+	  	<!-- CORE web 相关？因为form在里面... -->
+		<dependency>
+			<groupId>${pgroupId}</groupId>
+			<artifactId>we-core-web</artifactId>
+		</dependency>
+  	
+  </dependencies>
+</project>

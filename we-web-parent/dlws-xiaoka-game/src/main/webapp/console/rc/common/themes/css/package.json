@@ -1,0 +1,7 @@
+{
+	"family": "css",
+	"description": "平台系统前端样式表",
+	"spm": {
+		"output": ["**/*.css"]
+	}
+}

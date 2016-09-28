@@ -1,0 +1,18 @@
+@charset "utf-8";
+html,body{ background:url(../default/images/login/login_rebg.jpg) left top repeat-x #ebebeb; overflow:hidden;}
+a,a:link { color:#e7e7e7; text-decoration:none;}
+a:visited {color:#e7e7e7}/* 已访问的链接 */
+a:hover {color:#fff}/* 鼠标移动到链接上 */
+a:active {color: #fff}/* 选定的链接 */
+
+#header{ max-width:1000px; height:60px; padding:70px 0 0; margin:0 auto; border:none; background:none;}
+#header .logo{ width:450px; margin:0; padding:0; background:url(../default/images/login/biz.png) 235px 25px no-repeat; float:left;}
+#header .nav{ width:40%; margin:43px 0 0; text-align:right; float:right;}
+#header .nav li{ margin:0 13px 0 0; display:inline-block; *display:inline; *zoom:1;}
+
+#container{ max-width:1000px; min-height:auto; padding:20px 0 30px; margin:0 auto; background:none; overflow-x:hidden; overflow-y:auto; z-index:2;}
+.vkologin{ width:330px; height:340px; padding:0 0 0 670px; background:url(../default/images/login/login_form.jpg) no-repeat; float:right;}
+.vkologin .loading{ width:130px; height:100px; margin:110px 115px 0 0; background:url(../default/images/loading_bar.gif) center center no-repeat; float:right; opacity:0.8;}
+.loginbg{ width:100%; height:770px; background:url(../default/images/login/login_bg.jpg) center top no-repeat; position:absolute; top:0; z-index:1;}
+
+#footer{ color:#666;}

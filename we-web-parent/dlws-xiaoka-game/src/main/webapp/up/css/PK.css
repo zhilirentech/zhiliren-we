@@ -1,0 +1,380 @@
+html{
+	font-size: 100px;
+	height: 100%;
+}
+body{
+	background: #fdfcf7;
+	height: 100%;
+}
+   .main{
+  	width: 100%;
+  }
+  .main1{
+  	    width: 0.48rem;
+  		margin: 0 auto;
+  }
+  .main1 img{
+  	width: 0.48rem;
+  	height: 0.29rem;
+  
+  }
+ .main2 p{
+ 	text-align: center;
+ 	margin-bottom: 0px;
+ 	font-size: 23px;
+ 	color: #d94336;
+ }
+ .sizeShort{
+ 	font-size: 12px!important;
+ }
+ .pt20{
+ 	padding-top: 20px;
+ }
+ .mt20{
+ 	margin-top: 20px;
+ }
+ input[type=text]{
+ 	margin: 0px;
+ }
+ .findPeopleRule{
+ 	border: 1px solid gainsboro;
+ 	width: 80%;
+ 	height: 70px;
+ 	margin: 10px auto 0px;
+ 	background: white;
+ 	padding-top: 10px;
+ 	border-radius: 5px;
+ }
+ .findPeopleRule p{
+ 	color: black;
+ 	font-size: 16px;
+ 	text-align: center;
+ 	background: url("../img/titleUp.png") no-repeat center bottom;
+ 	background-size: 20px 15px ;
+ 	padding-bottom: 30px;
+ }
+ .ruleRecommend{
+ 	/*display: none;*/
+ 	position: absolute;
+ 	left: 50%;
+ 	margin-left: -40%;
+ 	width: 80%;
+ 	background: white;
+ 	margin-top: 10px;
+ 	padding-top: 5px;
+ 	border-radius: 5px;
+ 	border: 1px solid gainsboro;
+ 	z-index:20;
+ }
+ .ruleRecommend .title{
+ 	width: 80%;
+ 	text-align: center;
+ 	color: black;
+ 	font-size: 14px;
+ 	margin: 0 auto;
+ }
+ .ruleRecommend .summmary{
+ 	width: 90%;
+ 	text-align: left;
+ 	font-size: 12px;
+ 	margin: 10px auto;
+ }
+ .ruleRecommend .findPeopleRuleBtn{
+ 	background: #cd4236;
+ 	width: 100px;
+ 	height: 30px;
+ 	line-height: 30px;
+ 	color: white;
+ 	margin: 0 auto;
+ 	text-align: center;
+ 	border-radius: 7px;
+ 	margin-bottom:10px;
+ }
+ .comeformruleRecommend{
+ 	display: block;
+ 	position: absolute;
+ 	left: 50%;
+ 	margin-left: -45%;
+ 	width: 90%;
+ 	margin-top: -75px;
+ 	background: white;
+ 	height: 150px;
+ 	padding-top: 5px;
+ 	border-radius: 5px;
+ 	border: 1px solid gainsboro;
+ }
+ .comeformruleRecommend .title{
+ 	width: 80%;
+ 	text-align: center;
+ 	color: black;
+ 	font-size: 25px;
+ 	margin: 20px auto;
+ }
+ .comeformruleRecommend .findPeopleRuleBtn{
+ 
+ 	background: #cd4236;
+ 	width: 130px;
+ 	height: 40px;
+ 	line-height: 40px;
+ 	color: white;
+ 	margin: 20px auto;
+ 	text-align: center;
+ 	border-radius: 7px;
+ }
+ .PKtime{
+ 	width: 80%;
+ 	margin: 15px auto 0px ;
+ }
+ .PKtime p.first,.PKtime div.two{
+ 	font-size: 0.20rem;
+ 	color: #d94336;
+ }
+ .PKtime p.first input{
+ 	color: #999999;
+ 	margin-left: 0.10rem;
+ 	width: 2.17rem;
+ 	height: 32px;
+ 	font-size: 10px!important;
+ }
+ .PKtime div.two .cen{
+ 	color: gainsboro;
+ }
+ .PKtime div.two .left,.PKtime div.two .right{
+ 	font-size: 0.10rem;
+ 	background: white;
+ 	color: #999999;
+ 	/*border: 1px solid gainsboro;*/
+ 	display: inline-block;
+ 	width: 0.83rem;
+ 	height: 32px;
+ 	line-height: 32px;
+ 	text-align: center;
+ 	margin-left: 0.10rem;
+ 	border-radius: 5px;
+ 	
+ }
+ .PKtime div.two .right{
+ 	margin-left: 0px;
+ }
+ .comment{
+ 	width: 80%;
+ 	height: 150px;
+ 	margin: 10px auto 0px;
+ }
+ .comment p{
+ 	color: black;
+ }
+ .comment p.commentBtn{
+ 	color: white;
+ 	background: #d94336;
+ 	width: 150px;
+ 	height: 26px;
+ 	line-height: 26px;
+ 	margin: 20px auto 0px;
+ 	text-align: center;
+ 	border-radius: 6px;
+ }
+ 
+/* pk2-4*/
+.invitationMain{
+	width: 90%;
+	margin: 50px auto 0px;
+}
+.tag img{
+	float: left;
+	width: 50px;
+	height: 50px;
+	border-radius:8px ;
+}
+.tag .right{
+	/*float: left;*/
+	border: 1px solid gainsboro;
+	margin-left: 55px;
+	margin-top: 5px;
+	/*width: 75%;*/
+	height: 120px;
+	border-radius: 6px;
+}
+
+.tag .right p.one{
+	width: 100%;
+	text-align: center;
+	color: black;
+	margin-top: 8px;
+}
+
+.tag .right p.two{
+	width: 100px;
+	text-align: center;
+	margin: 0 auto;
+}
+.tag .right p.three{
+	width: 100%;
+	text-align: right;
+	padding-right: 0.56rem;
+}
+
+
+
+.showPicture{
+	width: 90%;
+	margin: 20px auto 0px;
+} 
+.showPicture .mtTips{
+	margin-top: 20px;
+} 
+
+.showPicture .one p{
+	text-align: center;
+	font-size: 10px;
+	margin-bottom: -8px;
+}
+.showPicture .one p:nth-child(2){
+	color: black;
+}
+.showPicture .one img{
+
+	width: 0.4rem;
+	height: 0.4rem;
+	border-radius: 50%;
+}
+
+.showPicture .three{
+	width: 50%;
+}
+.showPicture .three .one p{
+	font-size: 9px;
+	/*margin-bottom: 3px;*/
+	text-align: center;
+	margin-left: 8px;
+}
+.showPicture .three .one p.mbtips{
+	margin-bottom: 3px;
+}
+.showPicture .three .one p:nth-child(2){
+	color: black;
+}
+.showPicture .three .one img{
+	
+	width: 0.3rem;
+	height: 0.3rem;
+	border-radius: 50%;
+}
+ .clearfix:after{
+        display:block;
+        height:0px;
+        clear:both;
+        content:".";
+        visibility:hidden;
+        zoom:1;
+    }
+    .fl{
+    	float: left;
+    }
+.showPicture .two img{
+	width: 0.6rem;
+	height: 0.6rem;
+	margin-left: 0.07rem;
+}
+.mt{
+	margin-top: 10px!important;
+}
+
+.shareExplain{
+	font-size: 14px;
+	color: black;
+	width: 80%;
+	margin: 10px auto;
+	text-align: center;
+}
+
+/*comeFromPkMain */
+.comeFromPkMain{
+	
+	width: 80%;
+	border: 1px solid gainsboro;
+	/*height: 100px;*/
+	margin: 18px auto;
+	border-radius:6px ;
+}
+.comeFromPkMain p{
+	text-align: center;
+	margin-top:10px ;
+	color: black;
+	margin-bottom: 0px;
+}
+.comeFromPkMain p.bgimg img{
+	width: 80%;
+	height: 2.75rem;
+}
+
+.comeFromPkMain .btn{
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	background: #d94336;
+	text-align: center;
+	margin: 0 auto;
+	color:white;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+.comeFromPkMain .money{
+	/*padding-left: -3px;*/
+	background:url("../img/money.png") no-repeat left center ;
+	background-size: 16px 16px;
+	width: 185px;
+	position: relative;
+	top: -42px;
+	left: 50px;
+	font-size: 12px;
+}
+.comeFromPkMain .money span{
+	color: #d94336;
+}
+
+.comeFromPkMain p.wxbgimg img{
+	width: 45%;
+	height: 100px;
+}
+.comeFromPkMain p.wxone{
+	text-align: center;
+	margin-top:10px ;
+	color: black;
+	margin-bottom: 0px;
+	font-size: 18px;
+}
+
+.comeFromPkMain p.wxthree{
+	margin-top: 0px;	
+}
+.wxcomeFromPkMain{
+	height: 60%;
+}
+
+.bgpkup{
+
+	background:url("../img/up.png") no-repeat center center;
+	background-size: 28px 28px;
+	height: 30px;
+	margin-bottom: 0px;
+	margin-top: 18px;
+}
+
+/*comFromPK3-3*/
+.comment .one{
+	width: 185px;
+	padding-left: 16px;
+	font-size: 18px;
+	text-align: center;
+	margin: 0 auto;
+	background: url("../img/gotime.png") no-repeat left center;
+	background-size: 14px 14px;
+}
+
+.comment .one span{
+	color:#d94336;
+}
+.comment .two{
+	text-align: center;
+}

@@ -1,0 +1,9 @@
+{
+	"family": "vko",
+	"name": "config",
+	"description": "配置。",
+	"spm": {
+		"idleading": "vko/config/",
+		"output": ["config.js"]
+	}
+}

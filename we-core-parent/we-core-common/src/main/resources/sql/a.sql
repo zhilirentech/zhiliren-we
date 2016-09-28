@@ -1,0 +1,2 @@
+/*b*/
+select * from b
