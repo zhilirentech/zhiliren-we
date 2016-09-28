@@ -1,0 +1,75 @@
+/*wordpaster插件提示样式*/
+.tips {
+	position: absolute;
+	top: -16px;
+	left:auto;
+	font-size: 16px;
+	color: #ccc;
+	font-family: 'Microsoft YaHei';
+}
+
+.tips a {
+	color: #F00
+}
+
+.tips a:hover {
+	color: #F00;
+	text-decoration: underline;
+}
+
+.tips a.step {
+	position: absolute;
+	top: -70px;
+	right: -240px;
+	display: inline-block;
+	width: 289px;
+	height: 52px;
+	background: url(tips_bg.png) no-repeat 0 0;
+	color: #FFF;
+	padding: 10px;
+	display: none;
+	z-index: 1000;
+	line-height: normal;
+}
+
+.tips a.step:hover {
+	text-decoration: none;
+}
+
+.tips em {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background: url(tips.png) no-repeat center top;
+	cursor: pointer;
+}
+/*编辑器无内容时提示*/
+span.hint {
+	position: absolute;
+	top: 129px;
+	left: 21px;
+	color: #000;
+	font-size: 13px;
+	font-family: "宋体";
+	pointer-events: none;
+}
+
+span.hint em {
+	font-size: 22px;
+	color: #258c89;
+	margin: 0 5px;
+}
+/*限制字数提示*/
+.analyze-editor {
+	margin-bottom: 35px;
+}
+
+.strlen {
+	font-size: 14px;
+}
+
+.strlen em {
+	font-size: 24px;
+	font-weight: 600;
+	color: #00bfff;
+}

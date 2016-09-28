@@ -1,0 +1,89 @@
+html{
+		font-size: 100px;
+		/*overflow: hidden;*/
+		/*overflow-x:hidden;*/
+	}
+	body {
+/*overflow-x:hidden;
+overflow-y:hidden;*/
+}
+  .header{
+  	width: 100%;
+  	height: 44px;
+  	line-height: 44px;
+  	text-align: center;
+  	font-size:18px;
+  	color: white;
+  	background: #d94336;
+  }
+  .footer{
+  	position: fixed;
+  	width: 100%;
+  	bottom: 0px;
+  	right: 0px;
+  	height: 44px;
+  	line-height: 44px;
+  	background: linear-gradient(to right,black,#2f2e2e,black)
+  }
+  .footer p{
+  	width: 25%;
+  	/*background: pink;*/
+  	float: left;
+  	height: 44px;
+  	line-height: 69px;
+  	font-size: 10px;
+    color: white;
+  }
+   .footer p.first{
+   	background: url(../img/bottom-homepage.png) no-repeat center 5px;
+   	background-size: 18px 18px;
+   	text-align: center;
+   }
+   .footer p.two{
+   	background: url(../img/bottom-ranking.png) no-repeat center 5px;
+  
+   	background-size: 18px 18px;
+   	text-align: center;
+   }
+   .footer p.three{
+   	background: url(../img/bottom-my.png) no-repeat center 5px;
+   	background-size: 18px 18px;
+   	text-align: center;
+   }
+   .footer p.four {
+	background: url(../img/bottom-find.png) no-repeat center 5px;
+	background-size: 18px 18px;
+	text-align: center;
+}
+
+.listDetails{
+	width: 100%;
+	text-align: center;
+}
+.listDetails .one {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #d94336;
+}
+.listDetails .one p:first-child{
+	color: black;
+	font-size: 14px;
+	margin-bottom: 5px;
+	margin-top: 30px;
+}
+.listDetails .two{
+	width: 95%;
+	margin: 0 auto;
+	text-align: left;
+	margin-top: 10px;
+}
+.mui-badge {
+    display: block;
+    padding: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    background: #f54b4a;
+    top: -2px;
+    right: -2px;
+}

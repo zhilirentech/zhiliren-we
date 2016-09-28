@@ -1,0 +1,10 @@
+{
+	"family": "gallery",
+	"name": "json",
+	"version": "1.0.3",
+	"description": "JSON in JavaScript.",
+	"homepage": "http://www.JSON.org/",
+	"spm": {
+    	"output": ["json.js"]
+	}
+}

@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="10" name="Suite" parallel="none">
+  <test name="Test">
+    <classes>
+		<!-- <class name="com.uxuexi.core.db.dao.impl.TestDbDao"/>
+		<class name="com.uxuexi.core.db.dao.impl.TestOperateDbDao"/>
+		<class name="com.uxuexi.core.db.util.TestDbExendUtil"/>
+		<class name="com.uxuexi.core.db.util.TestDbSqlUtil"/>
+		<class name="com.uxuexi.core.db.util.TestEntityUtil"/>
+		<class name="com.uxuexi.core.db.util.TestRecordUtil"/> -->
+ 	</classes>
+  </test>
+</suite>

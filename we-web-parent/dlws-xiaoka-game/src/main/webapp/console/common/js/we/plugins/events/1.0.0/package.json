@@ -1,0 +1,10 @@
+{
+	"name": "events",
+	"family": "vko",
+	"version": "1.0.0",
+	"description": "提供基本的事件添加、移除和触发功能。",
+	"spm": {
+		"idleading": "vkoweb/js/common/plugins/events/1.0.0/",
+		"output": ["events.js"]
+	}
+}

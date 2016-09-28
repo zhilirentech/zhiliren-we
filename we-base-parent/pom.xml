@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.we</groupId>
+		<artifactId>we-parent</artifactId>
+		<version>1.0.0</version>
+	</parent>
+
+	<artifactId>we-base-parent</artifactId>
+	<packaging>pom</packaging>
+	<name>we-base-parent</name>
+	<description>校咖基础服务父模块</description>
+
+	<properties>
+		<zookeeper_version>3.4.6</zookeeper_version>
+		<druid.version>1.0.0</druid.version>
+		<mysql-connector.version>5.1.15</mysql-connector.version>
+	</properties>
+	<dependencies>
+		<!-- 通用工具包 -->
+		<dependency>
+			<groupId>${pgroupId}</groupId>
+			<artifactId>we-core-common</artifactId>
+			<version>${common.version}</version>
+			<scope>compile</scope>
+		</dependency>
+		
+		<!-- 数据库持久包 -->
+		<dependency>
+			<groupId>${pgroupId}</groupId>
+			<artifactId>we-core-db</artifactId>
+		</dependency>
+		
+		<!-- test -->
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-test</artifactId>
+		    <scope>test</scope>
+		</dependency>
+		
+	</dependencies>
+	<dependencyManagement>
+		<dependencies>
+			<!--数据源 -->
+			<dependency>
+				<groupId>com.alibaba</groupId>
+				<artifactId>druid</artifactId>
+				<version>${druid.version}</version>
+			</dependency>
+			
+			<!-- MYSQL -->
+			<dependency>
+				<groupId>mysql</groupId>
+				<artifactId>mysql-connector-java</artifactId>
+				<version>${mysql-connector.version}</version>
+				<scope>runtime</scope>
+			</dependency>
+			
+			<!-- redis包 -->
+			<dependency>
+				<groupId>${pgroupId}</groupId>
+				<artifactId>we-core-redis</artifactId>
+				<version>${redis.version}</version>
+				<scope>compile</scope>
+			</dependency>
+			
+			<!-- 网站相关包 -->
+			<dependency>
+				<groupId>${pgroupId}</groupId>
+				<artifactId>we-core-web</artifactId>
+				<version>${web.version}</version>
+				<scope>compile</scope>
+			</dependency>
+		
+			<!-- zookeeper -->
+			<dependency>
+				<groupId>org.apache.zookeeper</groupId>
+				<artifactId>zookeeper</artifactId>
+				<version>${zookeeper_version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	
+	<modules>
+	   
+	</modules>
+</project>

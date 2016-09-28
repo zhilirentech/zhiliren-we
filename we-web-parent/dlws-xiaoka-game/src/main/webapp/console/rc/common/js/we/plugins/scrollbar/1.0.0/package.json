@@ -1,0 +1,12 @@
+{
+	"family": "vko/plugins",
+	"name": "scrollbar",
+	"version": "1.0.0",
+	"description": "提供系统scrollbar美化方法。",
+	"spm": {
+		"alias": {
+			"jquery": "jquery"
+		},
+		"output": ["scrollbar.js"]
+	}
+}

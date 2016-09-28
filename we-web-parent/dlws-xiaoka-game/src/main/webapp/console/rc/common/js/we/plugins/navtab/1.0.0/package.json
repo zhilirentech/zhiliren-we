@@ -1,0 +1,9 @@
+{
+	"family": "vko/plugins",
+	"name": "navtab",
+	"version": "1.0.0",
+	"description": "提供标签导航处理 。",
+	"spm": {
+		"output": ["navtab.js","images/*"]
+	}
+}

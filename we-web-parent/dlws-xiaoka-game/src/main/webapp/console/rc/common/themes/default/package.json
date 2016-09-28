@@ -1,0 +1,7 @@
+{
+	"family": "css",
+	"description": "平台系统默认主题",
+	"spm": {
+		"output": ["style.css","images/**"]
+	}
+}

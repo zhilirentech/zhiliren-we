@@ -1,0 +1,423 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.we</groupId>
+	<artifactId>we-parent</artifactId>
+	<version>1.0.0</version>
+	<packaging>pom</packaging>
+	<!-- 说明该项目的职责 -->
+	<description>
+			1、所有项目根上的父项目，初始化所有项目的通用特性。相当于Java的Object
+			2、管理所有依赖包的版本号
+			3、管理私服资源
+	</description>
+	<!-- 必需要有两个以上的地方共用，才可以定义properties -->
+	<properties>
+		<!-- 所有项目统一的groupId -->
+		<pgroupId>${project.groupId}</pgroupId>
+	
+		<!-- 代码编译环境 -->
+		<jdk.version>1.8</jdk.version>
+		<!-- 代码编码方式 -->
+		<sourceEncoding>UTF-8</sourceEncoding>
+		
+		<!-- nutz -->
+		<nutz.version>1.r.57</nutz.version>
+		
+		<!-- 日志相关 -->
+		<slf4j.version>1.6.4</slf4j.version>
+		<logback.version>1.0.13</logback.version>
+		
+		<!-- spring  版本 -->
+		<spring_version>4.1.6.RELEASE</spring_version>
+		<guava.version>18.0</guava.version>
+		<!-- netty -->
+		<netty.version>5.0.0.Alpha1</netty.version>
+		
+		<!-- google protobuf 版本 -->
+		<proto.version>2.6.1</proto.version>
+		
+		<!-- protostuff -->
+		<protostuff.version>1.4.0</protostuff.version>
+		<objenesis.v>2.1</objenesis.v>
+		
+		<!-- dubbo 相关 -->
+		<dubbo.version>2.5.3</dubbo.version>
+		<spring_version>4.1.6.RELEASE</spring_version>
+		<zkclient_version>0.1</zkclient_version>
+		
+		<!-- 单元测试 -->
+		<junit.version>4.11</junit.version>
+		<h2.version>1.2.140</h2.version>
+		<easymock.version>3.2</easymock.version>
+		
+		<!-- 各项目的版本管理，请在此处修改 -->
+		<!-- CORE -->
+		<common.version>1.0.0</common.version>
+		<db.version>1.0.0</db.version>
+		<redis.version>1.0.0</redis.version>
+		<web.version>1.0.0</web.version>
+		<webwww.version>1.0.0</webwww.version>
+		<!-- CORE END-->
+		
+		<!-- 私服仓库地址  -->
+		<nexusRepositories>http://123.57.46.249:8081/nexus/content/repositories</nexusRepositories>
+	</properties>
+	<!-- 插件管理 -->
+	<build>
+		<pluginManagement>
+			<plugins>
+				<!-- resource插件, 设定编码 -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-resources-plugin</artifactId>
+					<version>2.5</version>
+					<configuration>
+						<encoding>${sourceEncoding}</encoding>
+					</configuration>
+				</plugin>
+				<!-- java 源码插件 ，生成java-source jar包 -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-source-plugin</artifactId>
+					<version>2.1.2</version>
+					<configuration>
+						<encoding>${sourceEncoding}</encoding>
+					</configuration>
+					<executions>
+						<execution>
+							<id>attach-sources</id>
+							<phase>verify</phase>
+							<goals>
+								<goal>jar</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+				<!-- javadoc 插件，生成javadoc jar包 -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-javadoc-plugin</artifactId>
+					<version>2.9.1</version>
+					<configuration>
+						<encoding>${sourceEncoding}</encoding>
+					</configuration>
+					<executions>
+						<execution>
+							<id>attach-javadocs</id>
+							<phase>install</phase>
+							<goals>
+								<goal>jar</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+				<!-- compiler插件, 设定JDK版本及编码 -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>2.5.1</version>
+					<configuration>
+						<source>${jdk.version}</source>
+						<target>${jdk.version}</target>
+						<encoding>${sourceEncoding}</encoding>
+					</configuration>
+				</plugin>
+				<!-- test插件 -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>2.9</version>
+					<configuration>
+						<skip>true</skip>
+						<forkMode>pertest</forkMode>
+					</configuration>
+					<executions>
+						<execution>
+							<id>ut</id>
+							<phase>test</phase>
+							<goals>
+								<goal>test</goal>
+							</goals>
+							<configuration>
+								true or false
+								是否要忽略单元测试，如果不忽略，单元测试有错就构建不了
+								<skip>true</skip>
+								<suiteXmlFiles>
+									<suiteXmlFile>src\test\resources\testng-ut.xml</suiteXmlFile>
+								</suiteXmlFiles>
+								<argLine>-Dfile.encoding=UTF-8</argLine>
+								<junitArtifactName>none:none</junitArtifactName>
+								<testNGArtifactName>org.testng:testng</testNGArtifactName>
+							</configuration>
+						</execution>
+					</executions>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+	<!-- 所有项目依赖，慎用！！！ -->
+	<dependencies>
+		<dependency>
+			<groupId>org.nutz</groupId>
+			<artifactId>nutz</artifactId>
+			<version>${nutz.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.9.4</version>
+			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<artifactId>junit</artifactId>
+					<groupId>junit</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>1.2.140</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.easymock</groupId>
+			<artifactId>easymock</artifactId>
+			<version>3.2</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.16.4</version>
+		</dependency>
+	</dependencies>
+	<!-- 集中管理子项目的依赖的详情。 一般管理的是：版本(version)，和作用域(scope)。 只有子项目中显示引用时才生效，引用时只需要groupId和 artifactId -->
+	<dependencyManagement>
+		<dependencies>
+			 <!-- Guava -->
+			<dependency>
+				<groupId>com.google.guava</groupId>
+				<artifactId>guava</artifactId>
+				<version>${guava.version}</version>
+			</dependency>
+		
+			<!--数据源 -->
+			<dependency>
+				<groupId>com.alibaba</groupId>
+				<artifactId>druid</artifactId>
+				<version>1.0.0</version>
+			</dependency>
+			<dependency>
+				<groupId>mysql</groupId>
+				<artifactId>mysql-connector-java</artifactId>
+				<version>5.1.15</version>
+				<scope>runtime</scope>
+			</dependency>
+			<dependency>
+				<groupId>javax.servlet</groupId>
+				<artifactId>servlet-api</artifactId>
+				<version>2.5</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>javax.servlet</groupId>
+				<artifactId>jsp-api</artifactId>
+				<version>2.0</version>
+				<scope>provided</scope>
+			</dependency>
+			
+			<!-- spring jdbc -->
+			<dependency>
+			    <groupId>org.springframework</groupId>
+			    <artifactId>spring-jdbc</artifactId>
+			    <version>${spring_version}</version>
+			</dependency>
+			
+			<!-- 日志 -->
+			<dependency>
+				<groupId>commons-logging</groupId>
+				<artifactId>commons-logging</artifactId>
+				<version>1.1.1</version>
+			</dependency>
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>log4j-over-slf4j</artifactId>
+				<version>${slf4j.version}</version>
+				<scope>runtime</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-api</artifactId>
+				<version>${slf4j.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>jcl-over-slf4j</artifactId>
+				<version>${slf4j.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>ch.qos.logback</groupId>
+				<artifactId>logback-classic</artifactId>
+				<version>${logback.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>ch.qos.logback</groupId>
+				<artifactId>logback-access</artifactId>
+				<version>${logback.version}</version>
+			</dependency>
+			
+			<!-- Netty -->
+			<dependency>
+				<groupId>io.netty</groupId>
+				<artifactId>netty-all</artifactId>
+				<version>${netty.version}</version>
+			</dependency>
+			
+			<!-- protobuff -->
+			<dependency>
+				<groupId>com.google.protobuf</groupId>
+				<artifactId>protobuf-java</artifactId>
+				<version>${proto.version}</version>
+			</dependency>
+			
+			<!-- Protostuff -->
+			<dependency>
+			    <groupId>io.protostuff</groupId>
+			    <artifactId>protostuff-core</artifactId>
+			    <version>${protostuff.version}</version>
+			</dependency>
+			
+			<dependency>
+			    <groupId>io.protostuff</groupId>
+			    <artifactId>protostuff-runtime</artifactId>
+			    <version>${protostuff.version}</version>
+			</dependency>
+			
+			<!-- Objenesis -->
+			<dependency>
+				<groupId>org.objenesis</groupId>
+				<artifactId>objenesis</artifactId>
+				<version>${objenesis.v}</version>
+			</dependency>
+			
+			<!-- dubbo相关 -->
+			<dependency>
+				<groupId>com.alibaba</groupId>
+				<artifactId>dubbo</artifactId>
+				<version>${dubbo.version}</version>
+				<exclusions>
+		            <exclusion>
+		                <groupId>org.springframework</groupId>
+		                <artifactId>spring</artifactId>
+		            </exclusion>
+		        </exclusions>
+			</dependency>
+			
+			<!-- Spring -->
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-core</artifactId>
+				<version>${spring_version}</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-context</artifactId>
+				<version>${spring_version}</version>
+			</dependency>
+			
+			<dependency>
+			    <groupId>org.springframework</groupId>
+			    <artifactId>spring-aop</artifactId>
+			    <version>${spring_version}</version>
+			</dependency>
+			
+			<dependency>
+			    <groupId>org.springframework</groupId>
+			    <artifactId>spring-jdbc</artifactId>
+			    <version>${spring_version}</version>
+			</dependency>
+			
+			<dependency>
+			    <groupId>org.springframework</groupId>
+			    <artifactId>spring-tx</artifactId>
+			    <version>${spring_version}</version>
+			</dependency>
+			
+			<dependency>
+			    <groupId>org.springframework</groupId>
+			    <artifactId>spring-test</artifactId>
+			    <version>${spring_version}</version>
+			    <scope>test</scope>
+			</dependency>
+			
+			<dependency>
+			    <groupId>junit</groupId>
+			    <artifactId>junit</artifactId>
+			    <version>${junit.version}</version>
+			    <scope>test</scope>
+			</dependency>
+			
+			<!-- zookeeper -->
+			<dependency>
+				<groupId>com.github.sgroschupf</groupId>
+				<artifactId>zkclient</artifactId>
+				<version>${zkclient_version}</version>
+			</dependency>
+			
+			
+			<!-- core项目依赖管理 -->
+			<dependency>
+				<groupId>com.we</groupId>
+				<artifactId>we-core-common</artifactId>
+				<version>${common.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.we</groupId>
+				<artifactId>we-core-db</artifactId>
+				<version>${db.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.we</groupId>
+				<artifactId>we-core-redis</artifactId>
+				<version>${redis.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.we</groupId>
+				<artifactId>we-core-web</artifactId>
+				<version>${web.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.we</groupId>
+				<artifactId>we-core-web-www</artifactId>
+				<version>${webwww.version}</version>
+			</dependency>
+			<!-- core项目依赖管理 -->
+			
+		</dependencies>
+	</dependencyManagement>
+
+	<!--项目分发信息，在执行mvn deploy后表示要发布的位置。有了这些信息就可以把网站部署到远程服务器或者把构件部署到远程仓库。 -->
+	<distributionManagement>
+		<repository>
+			<id>releases</id>
+			<name>Internal Releases</name>
+			<url>${nexusRepositories}/releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>Nexus Snapshot Repository</name>
+			<url>${nexusRepositories}/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+	<modules>
+		<module>we-core-parent</module>
+		<module>we-base-parent</module>
+		<module>we-business-parent</module>
+		<module>we-web-parent</module>
+		<module>we-test-parent</module>
+		<module>we-code-generator</module>
+	</modules>
+</project>

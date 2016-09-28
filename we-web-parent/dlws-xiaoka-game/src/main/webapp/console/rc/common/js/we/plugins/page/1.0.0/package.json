@@ -1,0 +1,12 @@
+{
+	"name": "page",
+	"version": "1.0.0",
+	"family": "vko/plugins",
+	"description": "提供 ajaxPage，linkPage 分页",
+	"spm": {
+		"alias": {
+			"jquery": "jquery"
+		},
+		"output": ["page.js"]
+	}
+}

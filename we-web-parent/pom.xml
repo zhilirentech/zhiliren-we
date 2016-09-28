@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.we</groupId>
+		<artifactId>we-parent</artifactId>
+		<version>1.0.0</version>
+	</parent>
+
+	<artifactId>we-web-parent</artifactId>
+	<packaging>pom</packaging>
+	<name>we-web-parent</name>
+	<description>we-web-parent</description>
+
+	<properties>
+		<!-- CORE -->
+		<common.version>1.0.0</common.version>
+		<db.version>1.0.0</db.version>
+		<redis.version>1.0.0</redis.version>
+		<web.version>1.0.0</web.version>
+		<webwww.version>1.0.0</webwww.version>
+		<!-- CORE END-->
+	</properties>
+	
+	<dependencies>
+		<!-- JSTL -->
+		<dependency>
+			  <groupId>jstl</groupId>
+			  <artifactId>jstl</artifactId>
+			  <version>1.2</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>taglibs</groupId>
+		    <artifactId>standard</artifactId>
+		    <version>1.1.2</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>javax.servlet</groupId>
+		    <artifactId>javax.servlet-api</artifactId>
+		    <version>3.0.1</version>
+		    <scope>provided</scope>
+		</dependency> 
+		
+		<!-- WEB 相关 -->
+		<dependency>
+			<groupId>${pgroupId}</groupId>
+			<artifactId>we-core-web-www</artifactId>
+		</dependency>
+		
+		<!-- datasource -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid</artifactId>
+		</dependency>
+		
+		<!-- DUBBO -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>dubbo</artifactId>
+		</dependency>
+	
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+		</dependency>
+	
+		<dependency>
+			<groupId>com.github.sgroschupf</groupId>
+			<artifactId>zkclient</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.jrobin</groupId>
+			<artifactId>jrobin</artifactId>
+			<version>1.5.9</version>
+		</dependency>
+		
+		<!-- mysql -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+		</dependency>
+		
+		<!-- JPS & SERVLET -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jsp-api</artifactId>
+		</dependency>
+		
+		<!-- log -->
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+		</dependency>
+		
+	</dependencies>
+	<dependencyManagement>
+		<dependencies>
+		
+			<!-- 通用工具-->
+			<dependency>
+				<groupId>${pgroupId}</groupId>
+				<artifactId>we-core-common</artifactId>
+				<version>${common.version}</version>
+				<scope>compile</scope>
+			</dependency>
+			<!-- 数据库持久包 -->
+			<dependency>
+				<groupId>${pgroupId}</groupId>
+				<artifactId>we-core-db</artifactId>
+				<version>${db.version}</version>
+				<scope>compile</scope>
+			</dependency>
+			<!-- 缓存redis-->
+			<dependency>
+				<groupId>${pgroupId}</groupId>
+				<artifactId>we-core-redis</artifactId>
+				<version>${redis.version}</version>
+				<scope>compile</scope>
+			</dependency>
+			<!-- 网站相关-->
+			<dependency>
+				<groupId>${pgroupId}</groupId>
+				<artifactId>we-core-web</artifactId>
+				<version>${web.version}</version>
+				<scope>compile</scope>
+			</dependency>
+			<!-- 网站前端相关-->
+			<dependency>
+				<groupId>${pgroupId}</groupId>
+				<artifactId>we-core-web-www</artifactId>
+				<version>${webwww.version}</version>
+				<scope>compile</scope>
+			</dependency>
+			
+			<!-- apache fileupload -->
+			<dependency>
+				<groupId>commons-fileupload</groupId>
+				<artifactId>commons-fileupload</artifactId>
+				<version>1.2.2</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	
+	<build>
+		<!-- 定义文件输出目录  java-->
+		<sourceDirectory>${basedir}/src/main/java</sourceDirectory>
+		<outputDirectory>${basedir}/src/main/webapp/WEB-INF/classes</outputDirectory>
+		
+		<testSourceDirectory>${basedir}/src/test/java</testSourceDirectory>
+		<testOutputDirectory>${basedir}/src/main/webapp/WEB-INF/test-classes</testOutputDirectory>
+		
+		<!-- 定义文件输出目录  RESOURCE-->
+		<resources>
+			<resource>
+				<directory>${basedir}/src/main/resources</directory>
+				<targetPath>${basedir}/src/main/webapp/WEB-INF/classes</targetPath>
+			</resource>
+			<resource>
+				<directory>${basedir}/src/test/resources</directory>
+				<targetPath>${basedir}/src/main/webapp/WEB-INF/test-classes</targetPath>
+			</resource>
+		</resources>
+	</build>
+	
+	<modules>
+		<module>web-template</module>
+		<module>dlws-we-game</module>
+  </modules>
+</project>

@@ -1,0 +1,10 @@
+{
+	"name": "jqueryui",
+	"family": "gallery",
+	"description": "提供日期控件datepicker",
+	"version": "1.10.3",
+	"homepage": "http://jqueryui.com/datepicker/#dropdown-month-year",
+	"spm": {
+		"output": ["jqueryui.js"]
+	}
+}

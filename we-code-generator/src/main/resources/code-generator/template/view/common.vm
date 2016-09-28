@@ -1,0 +1,15 @@
+#set($base = '${base}')
+#set($url = '${url}')
+#set($obj = '${obj.')
+#set($one = '${one.')
+#set($one_id='${one.id}')
+#set($obj_pager='${obj.pager}')
+#set($obj_pager_pageNumber='${obj.pager.pageNumber}')
+#set($obj_pager_pageSize='${obj.pager.pageSize}')
+<%@ page contentType="text/html; charset=UTF-8" language="java" pageEncoding="UTF-8" errorPage="/WEB-INF/common/500.jsp"%>
+<%@include file="/WEB-INF/common/tld.jsp"%>
+
+<c:set var="url" value="$base/$atUrl" />
+<div class="panel_head">
+	<h1>//TODO</h1>
+</div>

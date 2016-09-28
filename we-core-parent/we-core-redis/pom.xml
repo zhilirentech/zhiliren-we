@@ -1,0 +1,26 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.we</groupId>
+		<artifactId>we-core-parent</artifactId>
+		<version>1.0.0</version>
+	</parent>
+	<artifactId>we-core-redis</artifactId>
+	<name>we-core-redis</name>
+	<description>基于redis的缓存包</description>
+
+	<dependencies>
+		<!-- 工具包  -->
+		<dependency>
+			<groupId>com.we</groupId>
+			<artifactId>we-core-common</artifactId>
+		</dependency>
+		<!-- Jedis是redis的java版本的客户端实现 -->
+		<dependency>
+			<groupId>redis.clients</groupId>
+			<artifactId>jedis</artifactId>
+			<version>2.1.0</version>
+		</dependency>
+	</dependencies>
+</project>

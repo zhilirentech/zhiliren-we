@@ -1,0 +1,13 @@
+{
+	"name": "school",
+	"family": "vko",
+	"version": "1.0.0",
+	"description": "提供选择学校方法。",
+	"spm": {
+		"idleading": "vkoweb/js/common/plugins/school/1.0.0/",
+		"alias": {
+			"jquery": "jquery"
+		},
+		"output": ["school.js"]
+	}
+}

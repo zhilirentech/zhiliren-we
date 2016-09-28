@@ -1,0 +1,12 @@
+{
+	"family": "vko/plugins",
+	"name": "placeholder",
+	"version": "1.0.0",
+	"description": "针对不支持 html5 placeholder 的占位符兼容解决方案",
+	"spm": {
+		"alias": {
+			"jquery": "jquery"
+		},
+		"output": ["placeholder.js"]
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"family": "vko/plugins",
+	"name": "theme",
+	"version": "1.0.0",
+	"description": "提供切换界面主题风格处理",
+	"spm": {
+		"alias": {
+			"jquery": "jquery",
+			"cookie": "cookie"
+		},
+		"output": ["theme.js"]
+	}
+}

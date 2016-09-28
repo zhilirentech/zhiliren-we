@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.we</groupId>
+		<artifactId>we-parent</artifactId>
+		<version>1.0.0</version>
+	</parent>
+
+	<artifactId>we-core-parent</artifactId>
+	<packaging>pom</packaging>
+	<description>
+		它的子项目与业务没有关联的，只提供基础能力
+		1、聚合所有的子项目
+	</description>
+	
+	<dependencies>
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+		</dependency>
+	</dependencies>
+	
+	<!-- 打成源码和javadoc，如果没有修改的话，不用执行 -->
+	<build>
+		<plugins>
+			<!-- <plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+			</plugin> -->
+			<!-- <plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+			</plugin> -->
+		</plugins>
+	</build> 
+	<modules>
+		<module>we-core-common</module>
+		<module>we-core-db</module>
+		<module>we-core-redis</module>
+		<module>we-core-web</module>
+		<module>we-core-web-www</module>
+	</modules>
+</project>

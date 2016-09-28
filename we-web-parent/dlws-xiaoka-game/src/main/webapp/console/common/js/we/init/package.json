@@ -1,0 +1,16 @@
+{
+	"name": "init",
+	"family": "vko",
+	"description": "全站公用，页面初始化。",
+	"spm": {
+		"idleading": "vko/init/",
+		"alias": {
+			"jquery": "jquery",
+			"config": "config",
+			"ajax": "ajax",
+			"dialog": "dialog",
+			"utils": "utils"
+		},
+		"output": ["init.js"]
+	}
+}

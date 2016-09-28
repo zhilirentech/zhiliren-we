@@ -1,0 +1,21 @@
+.vkoLoginModule h2{ width:100%; font-size:24px; color:#fff; float:left; padding:20px 0;}
+.vkoLoginModule .vkolm-item{  width:100%; float:left;}
+.vkoLoginModule .vkolm-item a{ margin:0 22px 0 0;}
+.vkolm-logname input,.vkolm-logpwd input,.vkolm-rememberme label{ margin:0 0 1px; background:url(images/icon.jpg) no-repeat;}
+.vkolm-logname input,.vkolm-logpwd input{ width:240px; height:20px; line-height:20px; padding:15px 8px 15px 50px; border:1px solid #fff; color:#858585; font-size:18px; background-color:#fff;}
+.vkolm-logname input{ background-position:18px 16px; -moz-border-radius-topleft:3px; -webkit-border-top-left-radius:3px; border-top-left-radius:3px; -moz-border-radius-topright:3px; -webkit-border-top-right-radius:3px; border-top-right-radius:3px;}
+.vkolm-logpwd input{ background-position:18px -18px; -moz-border-radius-bottomleft:3px; -webkit-border-bottom-left-radius:3px; border-bottom-left-radius:3px; -moz-border-radius-bottomright:3px; -webkit-border-bottom-right-radius:3px; border-bottom-right-radius:3px;}
+.vkolm-rememberme label{ height:16px; line-height:15px; padding:0 0 0 22px; margin:15px 0 0; background-position:-2px -68px; color:#fff; float:left; cursor:pointer;}
+.vkolm-rememberme label.checked{ background-position:-2px -84px;}
+.vkolm-rememberme input{ opacity:0; filter:alpha(opacity=0); position:absolute; z-index:-1;}
+.vkolm-submit{ margin:15px 0 0;}
+.vkolm-submit input{ width:302px; height:43px; background:url(images/submit.jpg) no-repeat; border:none; font-size:24px; color:#fff; cursor:pointer; float:left;}
+.vkolm-help{ margin:12px 0 0;}
+.vkolm-item .vkolm-error{ width:215px; height:15px; line-height:15px; color:#fff; padding:0 0 0 25px;  background:url(images/error.gif) 5px 3px no-repeat; float:left; display:none;}
+.d-content .vkoLoginModule{ width:370px; padding:40px 0 40px 70px; overflow:auto; -webkit-border-radius: 0 0 6px 6px; -moz-border-radius: 0 0 6px 6px; border-radius: 0 0 6px 6px; -webkit-box-shadow: inset 0 1px 0 #fff; -moz-box-shadow: inset 0 1px 0 #fff; box-shadow: inset 0 1px 0 #fff;}
+.d-content .vkoLoginModule h2{ display:none;}
+.d-content .vkolm-logname input,.d-content .vkolm-logpwd input{ border-color:#ccc;}
+.d-content .vkolm-rememberme label{ color:#445a8b;}
+.d-content .vkolm-item .vkolm-error{ color:#b94a48;}
+
+.vkoLoginModule h2,.vkolm-submit input{ font-family:"Microsoft Yahei","微软雅黑",Arial,"宋体";}

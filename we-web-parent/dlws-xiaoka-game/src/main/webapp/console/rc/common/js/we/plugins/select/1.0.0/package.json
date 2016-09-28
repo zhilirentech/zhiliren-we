@@ -1,0 +1,13 @@
+{
+	"family": "vko/plugins",
+	"name": "select",
+	"version": "1.0.0",
+	"description": "select格式化",
+	"spm": {
+		"alias": {
+			"jquery": "jquery",
+			"ajax": "ajax"
+		},
+		"output": ["select.js","images/*"]
+	}
+}

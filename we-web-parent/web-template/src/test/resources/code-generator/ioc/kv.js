@@ -1,0 +1,9 @@
+{
+	//使用属性文件进行配置
+	propConfig:{
+		type:"org.nutz.ioc.impl.PropertiesProxy",
+		fields:{
+			paths:"code-generator/code-generator.properties"
+		}
+	}
+}

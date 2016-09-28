@@ -1,0 +1,12 @@
+{
+	"name": "utils",
+	"family": "vko",
+	"description": "提供全站utils工具集及扩展String/Array方法。",
+	"spm": {
+		"idleading": "vko/utils/",
+		"alias": {
+			"jquery": "jquery"
+		},
+		"output": ["utils.js"]
+	}
+}

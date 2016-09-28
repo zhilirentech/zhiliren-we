@@ -1,0 +1,14 @@
+{
+	"family": "vko/plugins",
+	"name": "flashchart",
+	"version": "1.0.0",
+	"description": "提供flash图表展示",
+	"spm": {
+		"alias": {
+			"jquery": "jquery",
+			"swfobject": "swfobject",
+			"json": "json"
+		},
+		"output": ["flashchart.js","flash/**"]
+	}
+}

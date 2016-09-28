@@ -1,0 +1,14 @@
+.footer p.four {
+	background: url(../img/bottom-find.png) no-repeat center 5px;
+	background-size: 18px 18px;
+	text-align: center;
+}
+.footer p {
+	width: 25%;
+    /* background: pink; */
+    float: left;
+    height: 44px;
+    font-size: 10px;
+    color: white;
+    line-height: 69px;
+}

@@ -1,0 +1,9 @@
+{
+	"family": "vko/plugins",
+	"name": "pagination",
+	"version": "1.0.0",
+	"description": "提供分页组件",
+	"spm": {
+		"output": ["pagination.js"]
+	}
+}

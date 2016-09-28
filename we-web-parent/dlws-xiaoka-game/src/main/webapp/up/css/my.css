@@ -1,0 +1,312 @@
+html{
+		font-size: 100px;
+		/*overflow: hidden;*/
+		/*overflow-x:hidden;*/
+	}
+	body {
+/*overflow-x:hidden;
+overflow-y:hidden;*/
+}
+  .header{
+  	width: 100%;
+  	height: 44px;
+  	line-height: 44px;
+  	text-align: center;
+  	font-size:18px;
+  	color: white;
+  	background: #d94336;
+  }
+  .footer{
+  	position: fixed;
+  	width: 100%;
+  	bottom: 0px;
+  	right: 0px;
+  	height: 44px;
+  	line-height: 44px;
+  	background: linear-gradient(to right,black,#2f2e2e,black)
+  }
+  .footer p{
+  	width: 25%;
+  	/*background: pink;*/
+  	float: left;
+  	height: 44px;
+  	line-height: 69px;
+  	font-size:10px;
+  	color:white;
+  }
+   .footer p.first{
+   	background: url(../img/bottom-homepage.png) no-repeat center 5px;
+   	background-size: 18px 18px;
+   	text-align: center;
+   }
+   .footer p.two{
+   	background: url(../img/bottom-ranking.png) no-repeat center 5px;
+  
+   	background-size: 18px 18px;
+   	text-align: center;
+   }
+   .footer p.three{
+   	background: url(../img/bottom-my.png) no-repeat center 5px;
+   	background-size: 18px 18px;
+   	text-align: center;
+   }
+
+/*my*/
+.myMain{
+	width: 100%;
+	height: 180px;
+	background: url("../img/mybg.png") no-repeat center center;
+	background-size:100% 180px ;
+}
+ .myMain p{
+ 	margin-bottom: 0px;
+ 	text-align: center;
+ 	color: black;
+ }
+  .myMain p.one img{
+  	margin: 20px auto 0px;
+   	height: 65px;
+   	width: 65px;
+  
+   }
+    .myMain p.two{
+    	font-size: 16px;
+    }
+    .myMain p.four{
+    	font-size: 18px;
+    	color: #676565;
+    }
+ .clearfix:after{
+    display:block;
+    height:0px;
+    clear:both;
+    content:".";
+    visibility:hidden;
+    zoom:1;
+}
+.mymenu{
+	width: 100%;
+	height: 100px;
+	background: #ffffff;
+	line-height: 98px;
+}
+.mymenu p{
+	width: 33.3%;
+	float: left;
+	text-align: center;
+	font-size: 16px;
+	padding-top: 30px;
+	height: 61px;
+}
+.mymenu .one{
+	background: url("../img/myPay.png") no-repeat center 10px;
+	background-size: 50px 50px ;
+}
+
+.mymenu .two{
+	background: url("../img/mytakemoney.png") no-repeat center 10px;
+	background-size: 50px 50px ;
+}
+
+.mymenu .three{
+	background: url("../img/myhonor.png") no-repeat center 10px;
+	background-size: 50px 50px ;
+}
+
+ul,li{
+	list-style: none;
+}
+.rowlist{
+	margin-top: 10px;
+	width: 100%;
+	padding-left: 0px;
+	background: #ffffff;
+}
+.rowlist li{
+	height: 45px;
+	line-height: 45px;
+	float: left;
+	width: 33.3%;
+	text-align: center;
+	color: gray;
+}
+.myadd{
+	text-align: center;
+	font-size: 20px;
+	margin-bottom: 60px;
+}
+
+/*myadd*/
+.mui-slider-item img{
+	width: 100%;
+	height: 140px;
+}
+.mui-slider-indicator .mui-indicator{
+	margin: 0px;
+	position: relative;
+	left: 145px;
+}
+.inpmoney{
+	width: 90%;
+	margin: 20px auto 0px;
+}
+.inpmoney2{
+	margin: 0 auto!important;
+}
+.inpmoney one{
+
+}
+.inpmoney .one p:first-child{
+	font-size: 20px;
+	width: 30%;
+	float: left;
+	height: 40px;
+	line-height: 40px;
+}
+.inpmoney .one input{
+	float: left;
+	display: inline-block;
+	/*margin-left: 100px;*/
+	width: 70%;
+	border-radius: 6px;
+	border: 1px solid gainsboro;
+}
+.inpmoney .one input.tipsOne{
+	float: left;
+	display: inline-block;
+	/*margin-left: 100px;*/
+	width: 70%;
+	border-radius: 6px;
+	border: 0px solid gainsboro;
+	background:#fbf9fe;
+}
+.selectDat{
+	height: 40px;
+	line-height: 40px;
+	color: #a29e9e;
+	float: left;
+	background: white url("../img/selectDate.png") no-repeat 16px center;
+	background-size: 15px 15px ;
+	display: inline-block;
+	/*margin-left: 100px;*/
+	width: 70%;
+	border-radius: 6px;
+	border: 1px solid gainsboro;
+}
+.selectDat p{
+	font-size: 16px!important;
+	color: #a29e9e;
+	width: 50%!important;
+	margin-left: 36px;
+}
+.sel_cal{
+	width: 90%;
+	margin-left: 5%;
+}
+
+.submitBtn{
+	width: 100%;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+.submitBtn p:first-child{
+	font-size: 18px;
+	color: #c93b33;
+	text-align: center;
+}
+.submitBtn p:last-child{
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 16px;
+	color: white;
+	margin: 0 auto;
+	background: #eca94b;
+	border-radius: 5px;
+}
+
+/*弹窗*/
+.mui-backdrop-tips{
+        display: none;
+        position: fixed;
+        z-index: 998;
+        top:0;
+        right: 0;
+        bottom: 0;
+        left:0;
+        background:rgba(0,0,0,.3);
+    }
+    .gomoney{
+    	display: none;
+    	width: 80%;
+    	
+    	position: absolute;
+    	top: 50%;
+    	left: 50%;
+    	margin-left: -40%;
+    	margin-top: -50px;
+    	z-index: 999;
+    	background: white;
+    	border-radius: 5px;
+    }
+    .gomoney img{
+    	width: 50px;
+    	height: 50px;
+    	position: absolute;
+    	top: -43px;
+    	right: 30px;
+    }
+    .gomoney .one{
+    	width: 100%;
+    	text-align: center;
+    	color: black;
+    	font-size: 20px;
+    	margin-top: 15px;
+    }
+    .gomoney input{
+    	width: 80%;
+    	margin-left: 10%;
+    	background: gainsboro;
+    	border-radius: 5px;
+    	
+    }
+     .gomoney .two{
+     	color: black;
+     	width: 70%;
+     	margin: 0 auto 10px;
+     }
+.gomoney .two span{
+	display: inline-block;
+	width: 60px;
+	height: 30px;
+	background: #d94336;
+	color: gray;
+	line-height: 30px;
+	text-align: center;
+	font-size: 18px;
+	border-radius: 5px;
+	margin: 0 auto;
+}
+.gomoney .two span:last-child{
+	background: gainsboro;
+	float: right;
+}
+
+.mypayhint{
+	/*display: none;*/
+	position: absolute;
+	width: 90%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 20px;
+	color: black;
+	text-align: center;
+	background: white;
+	top: 65%;
+	left:50%;
+	margin-left: -45%;
+	
+	border: 1px solid gainsboro;
+	
+}

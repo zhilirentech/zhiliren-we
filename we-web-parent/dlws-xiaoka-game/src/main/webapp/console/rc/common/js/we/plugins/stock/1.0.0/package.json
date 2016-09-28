@@ -1,0 +1,9 @@
+{
+	"family": "vko/plugins",
+	"name": "stock",
+	"version": "1.0.0",
+	"description": "提供大数据图表展示",
+	"spm": {
+		"output": ["stock.js"]
+	}
+}

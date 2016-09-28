@@ -1,0 +1,12 @@
+{
+	"family": "vko/plugins",
+	"name": "tree",
+	"version": "1.0.0",
+	"description": "提供树形菜单组件",
+	"spm": {
+		"alias": {
+			"jquery": "jquery"
+		},
+		"output": ["tree.js","images/*"]
+	}
+}

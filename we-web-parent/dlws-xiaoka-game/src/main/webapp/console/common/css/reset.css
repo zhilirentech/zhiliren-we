@@ -1,0 +1,47 @@
+/*CSS reset*/
+body,html{text-align:left;}
+html{font-family:'Microsoft Yahei'}  
+body,dl,dd,ul,ol,h1,h2,h3,h4,h5,h6,fieldset,legend,input,button,textarea,p{margin:0;padding:0;}
+em,i,a,span,b,ins,strong,label,button,input,textarea,select,img{display: inline-block;*display: inline;zoom: 1;vertical-align: middle;}
+body, button, input, select, textarea{font:12px/1.5,arial,'Microsoft YaHei',\5fae\8f6f\96c5\9ed1,sans-serif}
+button,img{border:none;}
+button,input,textarea{outline:none;}
+textarea{resize: none;overflow:auto;}
+em,i{font-style:normal;}
+h1,h2,h3,h4,h5,h6,strong{font-size:100%;font-weight:normal;}
+ul,li{list-style-type: none;}
+a,u,ins{text-decoration: none;}
+/* a:link {color: red}		未访问的链接 */
+/* a:visited {color: #00F}	已访问的链接 */
+a {color: #585858}
+a:hover {color: #6086ee}	/* 鼠标移动到链接上 */
+a:active {color: #58afff}	/* 选定的链接 */
+/*显示隐藏*/
+.hide{display: none}
+.show{display: block}
+/*置灰*/
+.grey,.grey:hover,.grey:active{color: #999;cursor:default;}
+/*清除浮动*/
+.hd:after,.hd:before,.hdc:after,.hdc:before,.nav:after,.nav:before,.wrap:after,.wrap:before,.main:after,.main:before,.mainc:after,.mainc:before,.side:after,.side:before,.sidec:after,.sidec:before,.tt:after,.tt:before,.ct:after,.ct:before{display: table;content: " ";clear: both;}
+/*CSS base*/
+.btn{font-size: 16px;height: 43px;line-height: 43px;text-align:center; color:#FFF;background: #58afff;border:0;cursor: pointer;}
+.btn:hover{opacity: 0.8;}
+.btn-dis{background-color:#ededed;border-color:#ededed;color:#999;cursor:default}
+.btn-dis:hover{opacity: 1;}
+/*CSS icon*/
+.icon{margin-right: 10px; width: 18px;height: 18px;background: url(../images/icon.png) no-repeat 0 0;}
+.icon-grey{background-position: 0 -87px}
+/*input*/
+.ipt,.txta{padding: 7px;border:1px solid #ccc;}
+.txta{padding:7px 0 0 7px;}
+.it-box{position:relative;}
+.it-ins{position: absolute;top: 0;left: 0;color: #999;}
+.ipt-focus{border:1px solid #58afff;}
+/*缩略图*/
+.thumbnail-r{float: right;}
+/*图片在左-文字在右*/
+.caption-row{display: inline-block;*display: inline;*zoom: 1;vertical-align: top;}
+
+
+
+

@@ -1,0 +1,26 @@
+{
+	"family": "vko",
+	"name": "init",
+	"description": "全站公用，页面初始化。",
+	"spm": {
+		"idleading": "vko/init/",
+		"alias": {
+			"jquery": "jquery",
+			"vko": "vko",
+			"ajax": "ajax",
+			"dialog": "dialog",
+			"cookie": "cookie",
+			"select": "select",
+			"placeholder": "placeholder",
+			"fixpng": "fixpng",
+			"utils": "utils",
+			"history": "history",
+			"theme":"theme",
+			"login":"login",
+			"navtab":"navtab",
+			"table":"table",
+			"pagination":"pagination"
+		},
+		"output": ["init.js"]
+	}
+}

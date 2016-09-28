@@ -1,0 +1,14 @@
+package ${service.packageName};
+
+import com.uxuexi.core.web.base.service.BaseService;
+import ${service.fullEntityClassName};
+
+import org.nutz.ioc.loader.annotation.IocBean;
+import org.nutz.log.Log;
+import org.nutz.log.Logs;
+
+@IocBean
+public class ${service.serviceClassName} extends BaseService<${service.EntityClassName}> {
+	private static final Log log = Logs.get();
+   
+}

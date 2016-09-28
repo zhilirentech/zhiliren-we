@@ -1,0 +1,12 @@
+{
+	"name": "validate",
+	"family": "vko/plugins",
+	"version": "1.0.0",
+	"description": "提供 validate 表单验证",
+	"spm": {
+		"alias": {
+			"jquery": "jquery"
+		},
+		"output": ["validate.js"]
+	}
+}

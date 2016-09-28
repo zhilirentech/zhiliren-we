@@ -1,0 +1,10 @@
+@charset "utf-8";
+.fenye{float: left;*float: none;  width:100%;margin: 20px 0;text-align: right;overflow:hidden;}
+.fenye .vkopage_hidden{ display:none !important;}
+.fenye span,.fenye a{display:inline-block;}
+.fenye .vkopage_first,.fenye .vkopage_last{ display:none;}
+.fenye a:hover,.fenye .vkopage_current{color:#fa6175;}
+.fenye a,.fenye span{padding:0 16px;height:41px;line-height:41px;font-size:20px;background:#f1f1f2;color:#979797;text-align:center;margin:0 9px;}
+.fenye span{background:none;margin:0 -9px;}
+.fenye .vkopage_previous,.fenye .vkopage_next{background:url(../1.0.0/images/lt_btn.png) no-repeat center 14px;text-indent:-99999px;margin:0 -9px;}
+.fenye .vkopage_next{background:url(../1.0.0/images/rt_btn.png) no-repeat center 14px;}

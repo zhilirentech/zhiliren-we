@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="
+     http://www.springframework.org/schema/beans 
+     http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+ 	 http://www.springframework.org/schema/context  
+ 	 http://www.springframework.org/schema/context/spring-context-3.2.xsd
+ 	 http://code.alibabatech.com/schema/dubbo 
+ 	 http://code.alibabatech.com/schema/dubbo/dubbo.xsd" 
+ 	 >
+    
+    <!-- 
+    	应用信息(com.alibaba.dubbo.config.ApplicationConfig)
+    	name:应用名
+    	version:版本
+    	owner:负责人
+    	environment：环境,只支持develop/test/product 
+    -->
+    <dubbo:application name="we-business-template" owner="zhuxiaochuan"/> 
+ 
+    <!--
+    	注册信息(com.alibaba.dubbo.config.RegistryConfig)
+    	使用zookeeper注册中心暴露服务地址 
+    	address:地址
+    	protocol:协议
+    	timeout:请求超时时间(毫秒)
+    	session:会话超时时间(毫秒)
+    	username:注册中心登录用户名
+    	password: 注册中心登录密码
+    -->
+    <dubbo:registry  protocol="zookeeper" address="localhost:2181" />
+ 
+    <!-- 
+    	服务协议(com.alibaba.dubbo.config.ProtocolConfig)
+    	用dubbo协议在20880端口暴露服务 
+    	name:协议名
+    	port:服务端口(多个服务可以用一个端口)
+    	threads: 线程池大小(固定大小)
+    	charset:字符集
+    -->
+    <dubbo:protocol name="dubbo" port="20880" />
+ 	
+    <!-- 声明需要暴露的服务接口BEGIN -->
+    
+    <!-- 
+    	服务发布信息(com.alibaba.dubbo.config.ServiceConfig)
+    	interface:   接口类型(包.接口)
+    	ref:         接口实现类引用（可以直接获取spring-ioc中的对象）
+    	cluster:     集群方式
+    	retries:     重试次数
+    	timeout:     远程调用超时时间(毫秒)
+    	loadbalance: 负载均衡方式
+    	owner:       负责人
+    	group：                      服务分组
+    	version:     版本
+     -->
+    <dubbo:service 
+    	interface="com.xiaoka.template.service.TemplateService" 
+    	ref="templateService" 
+    	version="1.0.0"
+    	cluster="failover" 
+    	retries="2" 
+    	timeout="1000" 
+    	loadbalance="random"
+    />
+    
+    
+    
+    <!-- 声明需要暴露的服务接口END -->
+</beans>
