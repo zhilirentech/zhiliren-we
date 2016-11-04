@@ -1,0 +1,78 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.we</groupId>
+		<artifactId>we-web-parent</artifactId>
+		<version>1.0.0</version>
+	</parent>
+
+	<artifactId>dlws-we-game</artifactId>
+	<properties>
+
+	</properties>
+
+	<packaging>war</packaging>
+	<name>dlws-xiaoka-game</name>
+	<url>http://game.we.com</url>
+
+	<!-- 插件管理 -->
+	<build>
+		<finalName>dlws-we-game</finalName>
+	</build>
+
+
+	<dependencies>
+		<dependency>
+			<groupId>${pgroupId}</groupId>
+			<artifactId>we-core-common</artifactId>
+			<scope>compile</scope>
+		</dependency>
+	
+		<!-- editor -->
+		<dependency>
+			<groupId>com.baidu</groupId>
+			<artifactId>ueditor</artifactId>
+			<version>1.1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.baidu</groupId>
+			<artifactId>json</artifactId>
+			<version>1.0</version>
+		</dependency>
+
+		<!-- apache-poi -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>3.8</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.apache.poi</groupId>
+		    <artifactId>poi-ooxml</artifactId>
+		    <version>3.8</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+		</dependency>
+
+		<!-- fastdfs -->
+		<dependency>
+			<groupId>org.csource</groupId>
+			<artifactId>fastdfs-client</artifactId>
+			<version>1.24.1</version>
+		</dependency>
+
+		<!-- 七牛 -->
+		<dependency>
+			<groupId>com.qiniu</groupId>
+			<artifactId>qiniu-java-sdk</artifactId>
+			<version>[7.0.0, 7.0.99]</version>
+		</dependency>
+
+	</dependencies>
+
+</project>

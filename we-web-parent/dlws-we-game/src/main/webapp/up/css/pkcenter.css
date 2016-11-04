@@ -1,0 +1,129 @@
+.pkCentreMain{
+	position: relative;
+	width: 90%;
+	height: 2.550rem;
+	/*background: pink;*/
+	margin: 0 auto;
+}
+.pkCentreMain .center{
+	width: 2.00rem;
+	height: 2.00rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -1.00rem;
+	margin-left: -1.00rem;
+}
+.pkCentreMain .center .pkimg{
+	width: 1.17rem;
+	height: 1.17rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -0.553rem;
+	margin-left: -0.553rem;
+}
+/*.pkCentreMain .centerone{
+	width:60px;
+	
+}*/
+.pkCentreMain .w60 img{
+	width:0.45rem;
+	height: 0.45rem;
+}
+.pkCentreMain .w40 img{
+	width:0.30rem;
+	height: 0.30rem;
+}
+.togethercenter p{
+	text-align: center;
+	color: black;
+	font-size: 8px;
+	margin-bottom: -7px;
+	margin-top: -7px;
+}
+.personradius{
+	width: 0.45rem;
+	height: 0.45rem;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.personradius1{
+	width: 0.30rem;
+	height: 0.30rem;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.centerone{
+	position: absolute;
+	top: 0.5rem;
+	left: -0.04rem;
+}
+.centertwo{
+	position: absolute;
+	top: 1.47rem;
+	left: 1.31rem;
+}
+.centerthree{
+	position: absolute;
+	top: 1.47rem;
+	left: 0.27rem;
+}
+.centerfour{
+	position: absolute;
+	top: -0.06rem;
+	left: 0.83rem;
+}
+
+.centerfive{
+	position: absolute;
+	top: 0.5rem;
+	left: 1.63rem;
+}
+
+.centersix{
+	position: absolute;
+	top: 0.20rem;
+	left: 0.37rem;
+}
+
+.centerseven{
+	position: absolute;
+	top: 1.11rem;
+	left: 0.10rem;
+}
+.centereight{
+	position: absolute;
+	top: 1.11rem;
+	left: 1.66rem;
+}
+.centernine{
+	position: absolute;
+	top: 0.20rem;
+	left: 1.38rem;
+}
+.centerten{
+	position: absolute;
+	top: 1.69rem;
+	left: 0.85rem;
+}
+
+.allpersonPktime{
+	width: 200px;
+	height: 25px;
+	background: #eca62b  url("../img/signin.png") no-repeat 10px center;
+	background-size:18px 18px ;
+	margin: 0 auto;
+	color: white;
+	line-height: 25px;
+	border-radius: 10px;
+	padding-left: 35px;
+	margin-top: 10px;
+	font-size: 12px;
+}
+.characterBg{
+	width: 100%;
+	height: 200px;
+	background: url("../img/characterBg.png") no-repeat center center;
+	background-size: 200px 100px;
+}
