@@ -25,7 +25,7 @@
 <body>
 <!-- header start -->
 <div id="header">
-	<h1 class="logo"><a href="#" title="后台管理" target="_blank"><img src="${base}/common/images/logo.jpg" width="200" height="60" alt="XIAOKA" /></a></h1>
+	<h1 class="logo"><a href="#" title="后台管理" target="_blank"><img src="${base}/common/images/logo.jpg" width="200" height="60" alt="logo" /></a></h1>
 	<div class="head">
 		<div class="head_bg_left"></div>
 		<div class="head_userinfo">你好 <b uid="${loginuser.id}"><font color="red">${loginuser.username}</font></b>，欢迎登录管理平台！</div>
