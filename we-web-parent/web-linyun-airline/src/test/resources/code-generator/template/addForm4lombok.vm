@@ -1,0 +1,34 @@
+package $packageName;
+
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import com.uxuexi.core.web.form.AddForm;
+#foreach ($import in $form.Imports)
+#if ($import)
+import $import;
+#else
+
+#end
+#end
+@Data
+@EqualsAndHashCode(callSuper = true)
+public class ${form.addFormName} extends AddForm implements Serializable{
+	private static final long serialVersionUID = 1L;
+#foreach ($column in $form.EnumColumns)
+	public static enum $column.SimpleJavaTypeName {
+
+
+#foreach ($value in $column.EnumValues) 
+		$value#if( $foreach.hasNext ),#end
+
+#end
+	}
+
+#end
+#foreach ($column in $form.Columns)
+	#if(${column.FieldName}!="id")/**$column.comment*/
+	private $column.SimpleJavaTypeName ${column.FieldName}#if ($column.DefaultValue) = ${column.DefaultValueCode}#end;
+	#end
+	
+#end
+}
